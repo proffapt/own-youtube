@@ -1,0 +1,86 @@
+
+html[global_enable="true"] #masthead-ad,
+html[global_enable="true"] ytd-mealbar-promo-renderer,
+
+/* Main */
+html[global_enable="true"][remove_homepage="true"] ytd-browse[page-subtype="home"],
+html[global_enable="true"][remove_sidebar="true"] #secondary > div.circle,
+html[global_enable="true"][remove_sidebar="true"] #related,
+html[global_enable="true"][remove_leftbar="true"] tp-yt-app-drawer[id="guide"],
+html[global_enable="true"][remove_leftbar="true"] ytd-mini-guide-renderer,
+html[global_enable="true"][remove_leftbar="true"] yt-icon-button[id="guide-button"],
+html[global_enable="true"][remove_end_of_video="true"] .html5-endscreen,
+/* YOUTUBE_APPS NOTIFICATIONS AND AVATAR */
+html[global_enable="true"][remove_youtubeapps="true"] yt-icon-button[class="style-scope ytd-topbar-menu-button-renderer style-default"],
+html[global_enable="true"][remove_avatar="true"] button[id="avatar-btn"],
+html[global_enable="true"][remove_notification="true"] yt-icon-button[class="style-scope ytd-notification-topbar-button-renderer"],
+
+/* Left Bar Navigation */
+html[global_enable="true"][remove_home_link="true"] a:not(#logo)[href="/"],
+html[global_enable="true"][remove_shorts_link="true"] a[title="Shorts"],
+html[global_enable="true"][remove_explore_link="true"] a[href="/feed/trending"],
+html[global_enable="true"][remove_shorts_link="true"] ytd-mini-guide-entry-renderer[aria-label="Shorts"],
+html[global_enable="true"][remove_explore_link="true"] a[href="/feed/explore"],
+html[global_enable="true"][remove_subscriptions_link="true"] a[href="/feed/subscriptions"],
+html[global_enable="true"][remove_library_link="true"] a[href="/feed/library"],
+html[global_enable="true"][remove_history_link="true"] a[href="/feed/history"],
+html[global_enable="true"][remove_yourvideos_link="true"] ytd-guide-entry-renderer > a[href*="studio.youtube.com/channel/"],
+html[global_enable="true"][remove_watchlater_link="true"] a[href="/playlist?list=WL"],
+html[global_enable="true"][remove_likedvideos_link="true"] a[href="/playlist?list=LL"],
+html[global_enable="true"][remove_subscriptions_pane="true"] ytd-guide-collapsible-entry-renderer,
+html[global_enable="true"][remove_subscriptions_pane="true"] ytd-guide-entry-renderer > a[href^="/c/"],
+html[global_enable="true"][remove_subscriptions_pane="true"] ytd-guide-entry-renderer > a[href^="/channel/"],
+html[global_enable="true"][remove_subscriptions_pane="true"] ytd-guide-section-entry-renderer > h3[class="style-scope ytd-guide-renderer"],
+html[global_enable="true"][remove_footer_pane="true"] div[id="footer"],
+html[global_enable="true"][remove_premium_link="true"] a[href="/premium"],
+html[global_enable="true"][remove_films_link="true"] a[href="/feed/storefront?bp=ogUCKAI%3D"],
+html[global_enable="true"][remove_gaming_link="true"] a[href="/gaming"],
+html[global_enable="true"][remove_live_link="true"] a[href="/channel/UC4R8DWoMoI7CAwX8_LjQHig"],
+html[global_enable="true"][remove_fashion_link="true"] a[href="/channel/UCrpQ4p1Ql_hG8rKXIKM1MOQ"],
+html[global_enable="true"][remove_learning_link="true"] a[href="/channel/UCtFRv9O2AHqOZjjynzrv-xg"],
+html[global_enable="true"][remove_sports_link="true"] a[href="/channel/UCEgdi0XIXXZ-qJOFPf4JSKw"],
+
+/* Homepage */
+html[global_enable="true"][remove_infinite_scroll="true"] ytd-rich-grid-renderer > #contents > ytd-continuation-item-renderer,
+html[global_enable="true"][remove_all_but_one="true"] ytd-rich-grid-renderer > #contents > ytd-rich-grid-row:nth-child(n+2),
+html[global_enable="true"][remove_all_but_one="true"] ytd-rich-grid-renderer > #contents > ytd-continuation-item-renderer,
+html[global_enable="true"][remove_extra_rows="true"] ytd-rich-grid-renderer > #contents > ytd-rich-grid-row + ytd-rich-section-renderer,
+
+/* Video Player */
+html[global_enable="true"][remove_entire_sidebar="true"] #secondary,
+html[global_enable="true"][remove_play_next_button="true"] a.ytp-next-button,
+html[global_enable="true"][remove_comments="true"] #comments,
+html[global_enable="true"][remove_comments="true"] #comment-teaser,
+html[global_enable="true"][remove_comments="true"] ytd-engagement-panel-section-list-renderer[target-id="engagement-panel-comments-section"],
+html[global_enable="true"][remove_chat="true"] #chat,
+html[global_enable="true"][remove_info_cards="true"] .ytp-ce-element.ytp-ce-element,
+html[global_enable="true"][remove_menu_buttons="true"] #menu-container,
+html[global_enable="true"][remove_embedded_more_videos="true"] div.ytp-pause-overlay,
+
+/* Search Results Page */
+html[global_enable="true"][on_results_page="true"][remove_extra_results="true"] ytd-shelf-renderer,
+html[global_enable="true"][on_results_page="true"][remove_shorts_results="true"] ytd-video-renderer[is_short="true"],
+html[global_enable="true"][remove_thumbnail_mouseover_effect="true"] #mouseover-overlay,
+
+html[global_enable="true"][foo=bar]
+
+{
+
+	display: none !important;
+
+}
+
+/* Disable Youtube logo's link to the homepage */
+html[global_enable="true"][remove_logo_link="true"] #logo[href="/"] {
+  pointer-events: none;
+}
+
+/* Center contents when the sidebar is entirely hidden */
+html[global_enable="true"][remove_entire_sidebar="true"] ytd-watch-flexy[flexy][is-two-columns_]:not([fullscreen]):not([theater]) {
+	--ytd-watch-flexy-max-player-width: calc(var(--ytd-watch-flexy-chat-max-height)*var(--ytd-watch-flexy-width-ratio)/var(--ytd-watch-flexy-height-ratio)) !important
+}
+
+/* Center contents when the leftbar is completely disabled */
+/* html[global_enable="true"][remove_sidebar="true"] ytd-app{
+	
+} */
