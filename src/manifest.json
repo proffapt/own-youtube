@@ -3,7 +3,7 @@
   "description": "Modify YouTube's layout in real-time and make it distraction free, like you own it!",
   "homepage_url": "https://github.com/proffapt/own-youtube",
   "manifest_version": 2,
-  "version": "1.0.0",
+  "version": "1.0.1",
 
   "icons": {
     "16": "images/16.png",

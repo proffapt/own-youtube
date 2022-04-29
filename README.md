@@ -112,7 +112,8 @@ _To get a local copy up and running follow these simple steps._
 ## Roadmap
 - [x] Take complete control of left navigation bar
 - [x] Take complete control of top bar
-- [ ] Align the content to centre when left navigation bar is purged completely
+- [x] Align the content to centre when left navigation bar is purged completely
+- [ ] Remove unnecessary padding in subscription page
 
 See the [open issues](https://github.com/proffapt/own-youtube/issues) for a full list of proposed features (and known issues).
 

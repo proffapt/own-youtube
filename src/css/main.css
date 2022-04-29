@@ -81,6 +81,6 @@ html[global_enable="true"][remove_entire_sidebar="true"] ytd-watch-flexy[flexy][
 }
 
 /* Center contents when the leftbar is completely disabled */
-/* html[global_enable="true"][remove_sidebar="true"] ytd-app{
-	
-} */
+html[global_enable="true"][remove_leftbar="true"] #page-manager[class="style-scope ytd-app"]{
+  margin-left: 0px;
+}
