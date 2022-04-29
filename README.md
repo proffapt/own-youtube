@@ -1,8 +1,5 @@
 <div id="top"></div>
 
-## MUST UPDATE THE FOLLOWING FILES :  `images`, `CHANGELOG.md`, `README.md`
-## DEPENDS ON SPECIAL CASES : `.gitignore`, `LICENSE.txt`
-
 <!-- PROJECT SHIELDS -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links-->
 [![Contributors][contributors-shield]][contributors-url]
@@ -17,14 +14,13 @@
 <br />
 <div align="center">
   <a href="https://github.com/proffapt/own-youtube">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="images/logo.png" alt="Logo" width="100" height="100">
   </a>
   
   <h3 align="center">own-youtube</h3>
 
   <p align="center">
-  <!-- UPDATE -->
-    <i>Project one liner slogan goes here</i>
+    <i>Modify YouTube's layout in real-time and make it distraction free, like you own it!</i>
     <br />
     <a href="https://github.com/proffapt/own-youtube"><strong>Explore the docs »</strong></a>
     <br />
@@ -50,11 +46,9 @@
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#changelog">Change.log</a></li>
@@ -67,27 +61,22 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-<!-- UPDATE -->
 <div align="center">
   <a href="https://github.com/proffapt/own-youtube">
-    <img src="images/screenshot.png" alt="product screenshot">
+    <img src="images/screenshot.png" alt="product screenshot" width="250" height="350">
   </a>
 </div>
 
-_Detailed explaination of the project goes here_
+YouTube these days has become as one of the main source of distractions, leading us to waste time on binge watching shit. This extension will remove every element you ever wanted, to completely remove distraction leading elements.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <div id="supports"></div>
 
 ### Supports:
-1. Shells
-    * `bash`
-    * `fish`
-    * `zsh`
-2. OS(s)
-    * `MacOS`[`BSD` based]
-    * any `*nix`[`GNU+Linux` and `Unix`]
+
+1. Browser
+	* Chrome
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -104,35 +93,17 @@ This project is made with following langs/frameworks.
 <!-- GETTING STARTED -->
 ## Getting Started
 
-To get a local copy up and running follow these simple steps.
-
-### Prerequisites
-<!-- UPDATE -->
-You will need to install the following dependencies for the project to work.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
 ### Installation
 
-_Now since we are done with the setting up of environment suitable for the project to compile/run, let's install and configure the project on your system locally now._
-<!-- UPDATE -->
-1. Clone the repo
-   ```sh
-   git clone https://github.com/proffapt/own-youtube.git
-   ```
-2. Make the script executable
-   ```sh
-   cd ./own-youtube
-   chmod +x ./own-youtube
-   ```
-3. Execute the script
-   ```sh
-   ./own-youtube
-   ```
+_To get a local copy up and running follow these simple steps._
+
+1. Download the .zip extension file from the [releases section]() and extract it
+
+2. Type `chrome://extensions` on search bar
+
+3. Toggle the **DEVELOPER MODE** on top right corner
+
+4. Click **LOAD UNPACKED** option and select the extracted folder.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
