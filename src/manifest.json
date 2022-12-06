@@ -2,7 +2,7 @@
   "name": "Own YouTube",
   "description": "Modify YouTube's layout in real-time and make it distraction free, like you own it!",
   "homepage_url": "https://github.com/proffapt/own-youtube",
-  "manifest_version": 2,
+  "manifest_version": 3,
   "version": "1.0.1",
 
   "icons": {
@@ -22,7 +22,7 @@
     }
   ],
 
-  "browser_action": {
+  "action": {
     "default_popup": "options.html",
     "default_title": "Own YouTube",
     "default_icon": {
@@ -39,7 +39,10 @@
   },
 
   "permissions": [
-    "storage",
+    "storage"
+  ],
+
+  "host_permissions": [
     "*://*.youtube.com/*"
   ]
 }
