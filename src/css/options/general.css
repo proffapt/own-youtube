@@ -41,5 +41,24 @@ body {
 
 body, body * {
   font-size: 14px;
-  font-family: Helvetica;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+fieldset{
+  border: none;
+  border-top: 1px solid #505050;
+  border-left: 1px solid #505050;
+  border-top-left-radius: 3px;
+}
+
+input[type="checkbox"]{
+  appearance: none;
+  margin: 0;
+  border: 1px solid #505050;
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+  transform: translateY(-0.5px);
+  display: grid;
+  place-content: center;
 }

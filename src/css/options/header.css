@@ -43,7 +43,7 @@ html[dark_mode='false'] #header-dark  { display: none }
 
 #dark_mode {
   position: absolute;
-  left: calc(100% - 75px);
+  left: calc(100% - 100px);
   height: 100%;
   width: 30px;
 
