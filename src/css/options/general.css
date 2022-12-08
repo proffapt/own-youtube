@@ -42,10 +42,3 @@ body, body * {
   font-size: 14px;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
-
-fieldset{
-  border: none;
-  border-top-left-radius: 3px;
-  border-top: 1px solid var(--body-color);
-  border-left: 1px solid var(--body-color);
-}

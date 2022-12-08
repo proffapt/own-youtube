@@ -71,3 +71,8 @@ html[dark_mode='true'] #header-logo{
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
+
+#header{
+  margin-top: 3px;
+  margin-bottom: 15px;
+}

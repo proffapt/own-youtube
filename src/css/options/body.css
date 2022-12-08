@@ -17,12 +17,13 @@
   height: var(--body-height);
   overflow: scroll;
   overflow-x: hidden;
+  padding: 1px;
+  padding-top: 10px;
 
   -webkit-transition: box-shadow 0.1s;
   -moz-transition: box-shadow 0.1s;
   -o-transition: box-shadow 0.1s;
   transition: box-shadow 0.1s;
-  padding: 1px;
 }
 
 #primary_options div {
@@ -33,22 +34,32 @@
   margin-bottom: 4px;
 }
 
-#primary_options fieldset {
+#primary_options .field {
   margin-bottom: 10px;
 }
 
-#primary_options fieldset:not(:last-child) {
+#primary_options .field:not(:last-child) {
   margin-bottom: 20px;
 }
 
-fieldset {
+.field {
   padding-bottom: 10px;
+  padding-left: 12px;
   box-sizing: border-box;
+  border: none;
+  border-top-left-radius: 3px;
+  border-top: 1px solid var(--body-color);
+  border-left: 1px solid var(--body-color);
+  overflow: visible;
 }
 
-fieldset legend, fieldset legend * {
+summary {
   font-weight: bold;
   color: var(--hover-fieldset-legend-color);
+  position: relative;
+  top: -10px;
+  width: fit-content;
+  background-color: var(--body-background-color);
 }
 
 label {
