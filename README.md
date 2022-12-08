@@ -49,12 +49,9 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#changelog">Change.log</a></li>
-    <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <li><a href="#miscelleneous">Miscelleneous</a></li>    
   </ol>
 </details>
 
@@ -97,65 +94,13 @@ This project is made with following langs/frameworks.
 
 _To get a local copy up and running follow these simple steps._
 
-1. Download the .zip extension file from the [releases section](https://github.com/proffapt/own-youtube/releases/tag/own-youtube) and extract it
+1. Clone the repository with `git clone https://github.com/proffapt/own-youtube`.
 
 2. Type `chrome://extensions` on search bar
 
 3. Toggle the **DEVELOPER MODE** on top right corner
 
-4. Click **LOAD UNPACKED** option and select the extracted folder.
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-<!-- ROADMAP -->
-## Roadmap
-- [x] Take complete control of left navigation bar
-- [x] Take complete control of top bar
-- [x] Align the content to centre when left navigation bar is purged completely
-- [ ] Remove unnecessary padding in subscription page
-
-See the [open issues](https://github.com/proffapt/own-youtube/issues) for a full list of proposed features (and known issues).
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-<!-- Changelog -->
-# Changelog
-
-## v1.0.0
-
-### Added or Changed
-- Added each and every element from sidebar
-- Purge the side-bar completely!
-- Toggle top bar buttons(including avatar, notifications etc.)
-- Remove ads
-- Redirect/disable youtube logo link
-- every other thing you need to make it distraction free
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-<!-- LICENSE -->
-## License
-
-Distributed under the BSD-2-Clause License. See `LICENSE.txt` for more information.
+4. Click **LOAD UNPACKED** option and select the `src` folder from the cloned repository.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -163,11 +108,25 @@ Distributed under the BSD-2-Clause License. See `LICENSE.txt` for more informati
 <!-- CONTACT -->
 ## Contact
 
-Arpit Bhardwaj - [Twitter](https://twitter.com/proffapt) - [Telegram](https://t.me/proffapt) - proffapt@protonmail.com
+<p>
+📫 Arpit Bhardwaj ( aka proffapt ) -   
 
-Company website: [Cybernity](https://cybernity.org) - [CybernityForum](https://cybernity.group)
-
-Project Link: [https://github.com/proffapt/own-youtube](https://github.com/proffapt/own-youtube)
+<a href="https://twitter.com/proffapt">
+  <img align="center" alt="proffapt's Twitter " width="22px" src="https://raw.githubusercontent.com/edent/SuperTinyIcons/master/images/svg/twitter.svg" />
+</a>
+<a href="https://t.me/proffapt">
+  <img align="center" alt="proffapt's Telegram" width="22px" src="https://raw.githubusercontent.com/edent/SuperTinyIcons/master/images/svg/telegram.svg" />
+</a>
+<a href="https://www.linkedin.com/in/proffapt/">
+  <img align="center" alt="proffapt's LinkedIn" width="22px" src="https://raw.githubusercontent.com/edent/SuperTinyIcons/master/images/svg/linkedin.svg" />
+</a> 
+<a href="mailto:proffapt@pm.me">
+  <img align="center" alt="proffapt's mail" width="22px" src="https://raw.githubusercontent.com/edent/SuperTinyIcons/master/images/svg/mail.svg" />
+</a> 
+<a href="https://cybernity.group">
+  <img align="center" alt="proffapt's forum for cybernity" width="22px" src="https://cybernity.group/uploads/default/original/1X/a8338f86bbbedd39701c85d5f32cf3d817c04c27.png" />
+</a> 
+</p>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -177,9 +136,19 @@ Project Link: [https://github.com/proffapt/own-youtube](https://github.com/proff
 
 * [Choose an Open Source License](https://choosealicense.com)
 * [Img Shields](https://shields.io)
+<!-- UPDATE -->
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+## Miscelleneous
+
+Do consider looking at other paradigms of this documentation
+  - [Change-logs](CHANGELOG.md)
+  - [License used](LICENSE.txt)
+  - [Code Of Conduct](CODE_OF_CONDUCT.md)
+  - [How to contribute?](CONTRIBUTING.md)
+
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
 
