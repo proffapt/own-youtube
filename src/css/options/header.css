@@ -32,6 +32,9 @@ html[dark_mode='false'] #header-dark  { display: none }
 #header-logo:hover {
   height: 98%;
 }
+html[dark_mode='true'] #header-logo{
+  filter: invert(90%);
+}
 #header-text {
   font-weight: bold;
   margin-left: 30px;
