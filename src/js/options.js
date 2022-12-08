@@ -40,6 +40,10 @@ const SETTINGS_LIST = {
   "remove_fashion_link":                { defaultValue: false, eventType: 'click' },
   "remove_learning_link":                { defaultValue: false, eventType: 'click' },
   "remove_sports_link":                { defaultValue: false, eventType: 'click' },
+  "remove_creatorStudio_link":                { defaultValue: false, eventType: 'click' },
+  "remove_music_link":                { defaultValue: false, eventType: 'click' },
+  "remove_kids_link":                { defaultValue: false, eventType: 'click' },
+  "remove_tv_link":                { defaultValue: false, eventType: 'click' },
 
   "normalize_shorts":                  { defaultValue: false, eventType: 'click' },
   "auto_skip_ads":                     { defaultValue: false, eventType: 'click' },
