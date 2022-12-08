@@ -43,15 +43,15 @@
 }
 
 .field {
-  padding-bottom: 10px;
   padding-left: 12px;
   box-sizing: border-box;
   border: none;
   border-top-left-radius: 3px;
-  border-top: 1px solid var(--body-color);
-  border-left: 1px solid var(--body-color);
+  border-top: 1px solid var(--border-color);
+  border-left: 1px solid var(--border-color);
   overflow: visible;
 }
+
 
 summary {
   font-weight: bold;
@@ -110,7 +110,7 @@ input[type="checkbox"]{
   appearance: none;
   cursor: pointer;
   margin: 0;
-  border: 1px solid #505050;
+  border: 1px solid var(--body-color);
   width: 12px;
   height: 12px;
   border-radius: 3px;
@@ -126,7 +126,7 @@ input[type="checkbox"]::before {
   transform: scale(1);
   transition: 120ms transform ease-in-out;
   border-radius: 3px;
-  background-color: #707070;
+  background-color: var(--checkbox-color);
 }
 
 input[type="checkbox"]:checked::before {
