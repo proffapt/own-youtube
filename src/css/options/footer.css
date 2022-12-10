@@ -1,9 +1,9 @@
 
-html[dark_mode='true'] .footer-path {
+html[dark_mode^='true'] .footer-path {
   fill: var(--body-color);
 }
 
-html[dark_mode='true'] #donate_button .footer-path  {
+html[dark_mode^='true'] #donate_button .footer-path  {
   stroke: var(--body-color);
   fill: var(--body-background-color);
 }

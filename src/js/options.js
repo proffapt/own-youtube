@@ -6,7 +6,7 @@ if (typeof browser === 'undefined') {
 // Some global constants.
 const HTML = document.documentElement;
 const SETTINGS_LIST = {
-  "dark_mode":                         { defaultValue: false, eventType: 'click' },
+  "dark_mode":                         { defaultValue: 'system', values: { system: matchMedia('(prefers-color-scheme: dark)').matches + ' system', dark: 'true', light: 'false' }, eventType: 'click' },
   "global_enable":                     { defaultValue: true,  eventType: 'click' },
 
   "remove_homepage":                   { defaultValue: true,  eventType: 'click' },
@@ -84,10 +84,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
   // Defaults.
-  Object.entries(SETTINGS_LIST).forEach(([key, { defaultValue: value }]) => {
+  Object.entries(SETTINGS_LIST).forEach(([key, { defaultValue: value, values }]) => {
     const settingButton = document.getElementById(key);
     if (settingButton) settingButton.checked = value;
-    HTML.setAttribute(key, value);
+    HTML.setAttribute(key, values?.[value] ?? value);
     const button = document.getElementById(key);
     if (button && 'checked' in button) button.checked = value;
   });
@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", () => {
   browser && browser.storage.local.get(localSettings => {
     Object.entries(localSettings).forEach(([key, value]) => {
       if (!VALID_SETTINGS.includes(key)) return;
-      HTML.setAttribute(key, value);
+      HTML.setAttribute(key, SETTINGS_LIST[key].values ? SETTINGS_LIST[key].values[value] ?? SETTINGS_LIST[key].values[SETTINGS_LIST[key].defaultValue] : value);
       const button = document.getElementById(key);
       if (button && 'checked' in button) button.checked = value;
     });
@@ -105,20 +105,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 // Change settings with the options menu.
-Object.entries(SETTINGS_LIST).forEach(([key, { eventType }]) => {
+Object.entries(SETTINGS_LIST).forEach(([key, { eventType, values }]) => {
   const settingElements = Array.from(document.getElementsByClassName(key));
   settingElements.forEach(button => button.addEventListener(eventType, async e => {
 
-    // Toggle on click: new value is opposite of old value.
-    const value = !(String(HTML.getAttribute(key)).toLowerCase() === "true");
+    // Cycle on click: new value is opposite of old value, or if values is present, new value is next to the old value.
+    let value = !(String(HTML.getAttribute(key)).toLowerCase() === "true");
+    if (values) {
+      let newIndex = Object.values(values).indexOf(HTML.getAttribute(key));
+      newIndex == Object.values(values).length - 1 ? newIndex = 0 : newIndex += 1;
+      value = Object.values(values)[newIndex];
+    }
 
     // Communicate changes (to local settings, content-script.js, etc.)
     let saveObj;
 
     // Handle standard (non-redirect) settings.
     if (!key.includes('redirect')) {
-      saveObj = { [key]: value };
-
+      saveObj = { [key]: values ? Object.keys(values)[Object.values(values).indexOf(value)] : value };
       // Update background script with globalEnable.
       if (key === 'global_enable') {
         browser && browser.runtime.sendMessage({ globalEnable: value });
@@ -138,7 +142,7 @@ Object.entries(SETTINGS_LIST).forEach(([key, { eventType }]) => {
     }
 
     // Update options page.
-    Object.entries(saveObj).forEach(([key, value]) => HTML.setAttribute(key, value));
+    Object.entries(saveObj).forEach(([key, value]) => HTML.setAttribute(key, values?.[value] ?? value));
     if ('checked' in button) button.checked = value;
 
     if (browser) {

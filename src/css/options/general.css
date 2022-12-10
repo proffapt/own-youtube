@@ -1,5 +1,4 @@
-
-html[dark_mode='true'] {
+html[dark_mode^='true'] {
   --body-color: #c9c9c9;
   --body-background-color: #393939;
   --hover-fieldset-legend-color: #eeeeee;
@@ -7,7 +6,7 @@ html[dark_mode='true'] {
   --border-color: #b9b9b9;
 }
 
-html[dark_mode='false'] {
+html[dark_mode^='false'] {
   --body-color: #393939;
   --body-background-color: #efefef;
   --hover-fieldset-legend-color: #000000;
