@@ -8,6 +8,9 @@
     <link rel="stylesheet" type="text/css" href="css/options/header.css">
     <link rel="stylesheet" type="text/css" href="css/options/body.css">
     <link rel="stylesheet" type="text/css" href="css/options/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
   </head>
 
   <body>
@@ -20,6 +23,12 @@
         <div id='header-text'>Own YouTube</div>
 
         <div id='dark_mode'>
+          <a title='System Default Theme'>
+            <svg id='header-system-theme' class='dark_mode' viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path fill="currentColor" d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8V16Z" />
+              <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2ZM12 4V8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16V20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4Z" fill="currentColor" />
+            </svg>
+          </a>
           <a title='Dark Mode'>
             <svg id='header-light' class='dark_mode' viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <circle fill="#464646" cx="12" cy="12" r="5"/>
@@ -54,8 +63,8 @@
     </div>
 
     <div id="primary_options">
-      <fieldset>
-        <legend>Basic</legend>
+      <details open class="field">
+        <summary>Basic</summary>
 
         <div>
             <input type="checkbox" id="remove_homepage" class="remove_homepage"
@@ -108,11 +117,11 @@
             </label>
         </div>
 
-      </fieldset>
+      </details>
 
-      <fieldset>
-        <legend>Homepage</legend>
-
+      <details open class="field">
+        <summary>Homepage</summary>
+        
         <div>
             <input type="checkbox" id="remove_all_but_one" class="remove_all_but_one"
                    value="remove_all_but_one" unchecked />
@@ -138,16 +147,16 @@
             </label>
         </div>
 
-      </fieldset>
+      </details>
 
-      <fieldset>
-        <legend>Left Navigation Bar</legend>
+      <details open class="field">
+        <summary>Left Navigation Bar</summary>
 
         <div>
             <input type="checkbox" id="remove_leftbar" class="remove_leftbar"
                    value="remove_leftbar" unchecked />
             <label for="remove_leftbar">
-              >> Purge it completely
+              >> Complete Bar
               <img class="tooltip" src="images/tooltip.svg" title="Remove the left navigation bar completely.">
             </label>
         </div>
@@ -243,8 +252,8 @@
 
 		<br>
 		
-		<fieldset>
-			<legend>More From Youtube</legend>
+		<details open class="field">
+			<summary>More From Youtube</summary>
 
         <div>
 			<input type="checkbox" id="remove_premium_link" class="remove_premium_link"
@@ -330,7 +339,7 @@
             </label>
         </div>
 
-		</fieldset>
+    </details>
 		
 		<div>
 			<input type="checkbox" id="remove_footer_pane" class="remove_footer_pane"
@@ -340,10 +349,10 @@
 			</label>
 		</div>
 
-	</fieldset>
+	</details>
 	
-	<fieldset>
-		<legend>Video Player</legend>
+	<details open class="field">
+		<summary>Video Player</summary>
 		
         <div style="margin-top: 5px"><b>Dynamic options</b></div>
         <div>
@@ -435,10 +444,10 @@
               <img class="tooltip" src="images/tooltip.svg" title="Panel that appears in embedded videos when paused.">
             </label>
         </div>
-      </fieldset>
+      </details>
 
-      <fieldset>
-        <legend>Search Results Page</legend>
+      <details open class="field">
+        <summary>Search Results Page</summary>
 
         <div>
             <input type="checkbox" id="remove_extra_results" class="remove_extra_results"
@@ -466,10 +475,10 @@
             </label>
         </div>
 
-      </fieldset>
+      </details>
 
-      <fieldset>
-        <legend>Redirect the<a class="redirect_link" href="https://www.youtube.com/" target="_blank"> Homepage ↗️</a></legend>
+      <details open class="field">
+        <summary>Redirect the<a class="redirect_link" href="https://www.youtube.com/" target="_blank"> Homepage ↗️</a></summary>
 
         <div>
             <input type="radio" id="redirect_to_subs" class="redirect_to_subs" name="redirect"
@@ -497,14 +506,14 @@
             </label>
         </div>
 
-      </fieldset>
+      </details>
 
     </div>
 
-
+    <a id='manage_history' href='https://myactivity.google.com/product/youtube' title="Too many cat video suggestions? Try removing cat videos from your watch history." target="_blank">
     <div id='manage_history_container'>
-      <a id='manage_history' href='https://myactivity.google.com/product/youtube' title="Too many cat video suggestions? Try removing cat videos from your watch history." target="_blank">Manage YouTube History</a>
-    </div>
+      YouTube History
+    </div></a>
 
 
     <div id='footer'>

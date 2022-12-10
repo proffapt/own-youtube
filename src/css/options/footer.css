@@ -1,9 +1,9 @@
 
-html[dark_mode='true'] .footer-path {
+html[dark_mode^='true'] .footer-path {
   fill: var(--body-color);
 }
 
-html[dark_mode='true'] #donate_button .footer-path  {
+html[dark_mode^='true'] #donate_button .footer-path  {
   stroke: var(--body-color);
   fill: var(--body-background-color);
 }
@@ -53,3 +53,13 @@ html[dark_mode='true'] #donate_button .footer-path  {
   fill: #F6000B;
 }
 
+#manage_history{
+  text-decoration: none;
+}
+#manage_history_container{
+  border-bottom-width: 2px;
+  border-top-width: 1px;
+  border-left-width: 1px;
+  border-right-width: 2px;
+  border-radius: 2px;
+}

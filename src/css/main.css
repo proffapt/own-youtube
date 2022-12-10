@@ -71,6 +71,7 @@ html[global_enable="true"][foo=bar]
 {
 
 	display: none !important;
+  /**color: red;**/
 
 }
 
