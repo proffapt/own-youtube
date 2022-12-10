@@ -8,6 +8,9 @@
     <link rel="stylesheet" type="text/css" href="css/options/header.css">
     <link rel="stylesheet" type="text/css" href="css/options/body.css">
     <link rel="stylesheet" type="text/css" href="css/options/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
   </head>
 
   <body>
@@ -60,8 +63,8 @@
     </div>
 
     <div id="primary_options">
-      <fieldset>
-        <legend>Basic</legend>
+      <details open class="field">
+        <summary>Basic</summary>
 
         <div>
             <input type="checkbox" id="remove_homepage" class="remove_homepage"
@@ -114,11 +117,11 @@
             </label>
         </div>
 
-      </fieldset>
+      </details>
 
-      <fieldset>
-        <legend>Homepage</legend>
-
+      <details open class="field">
+        <summary>Homepage</summary>
+        
         <div>
             <input type="checkbox" id="remove_all_but_one" class="remove_all_but_one"
                    value="remove_all_but_one" unchecked />
@@ -144,16 +147,16 @@
             </label>
         </div>
 
-      </fieldset>
+      </details>
 
-      <fieldset>
-        <legend>Left Navigation Bar</legend>
+      <details open class="field">
+        <summary>Left Navigation Bar</summary>
 
         <div>
             <input type="checkbox" id="remove_leftbar" class="remove_leftbar"
                    value="remove_leftbar" unchecked />
             <label for="remove_leftbar">
-              >> Purge it completely
+              >> Complete Bar
               <img class="tooltip" src="images/tooltip.svg" title="Remove the left navigation bar completely.">
             </label>
         </div>
@@ -249,8 +252,8 @@
 
 		<br>
 		
-		<fieldset>
-			<legend>More From Youtube</legend>
+		<details open class="field">
+			<summary>More From Youtube</summary>
 
         <div>
 			<input type="checkbox" id="remove_premium_link" class="remove_premium_link"
@@ -336,7 +339,7 @@
             </label>
         </div>
 
-		</fieldset>
+    </details>
 		
 		<div>
 			<input type="checkbox" id="remove_footer_pane" class="remove_footer_pane"
@@ -346,10 +349,10 @@
 			</label>
 		</div>
 
-	</fieldset>
+	</details>
 	
-	<fieldset>
-		<legend>Video Player</legend>
+	<details open class="field">
+		<summary>Video Player</summary>
 		
         <div style="margin-top: 5px"><b>Dynamic options</b></div>
         <div>
@@ -441,10 +444,10 @@
               <img class="tooltip" src="images/tooltip.svg" title="Panel that appears in embedded videos when paused.">
             </label>
         </div>
-      </fieldset>
+      </details>
 
-      <fieldset>
-        <legend>Search Results Page</legend>
+      <details open class="field">
+        <summary>Search Results Page</summary>
 
         <div>
             <input type="checkbox" id="remove_extra_results" class="remove_extra_results"
@@ -472,10 +475,10 @@
             </label>
         </div>
 
-      </fieldset>
+      </details>
 
-      <fieldset>
-        <legend>Redirect the<a class="redirect_link" href="https://www.youtube.com/" target="_blank"> Homepage ↗️</a></legend>
+      <details open class="field">
+        <summary>Redirect the<a class="redirect_link" href="https://www.youtube.com/" target="_blank"> Homepage ↗️</a></summary>
 
         <div>
             <input type="radio" id="redirect_to_subs" class="redirect_to_subs" name="redirect"
@@ -503,14 +506,14 @@
             </label>
         </div>
 
-      </fieldset>
+      </details>
 
     </div>
 
-
+    <a id='manage_history' href='https://myactivity.google.com/product/youtube' title="Too many cat video suggestions? Try removing cat videos from your watch history." target="_blank">
     <div id='manage_history_container'>
-      <a id='manage_history' href='https://myactivity.google.com/product/youtube' title="Too many cat video suggestions? Try removing cat videos from your watch history." target="_blank">Manage YouTube History</a>
-    </div>
+      YouTube History
+    </div></a>
 
 
     <div id='footer'>

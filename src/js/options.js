@@ -82,6 +82,7 @@ const REDIRECT_OPTIONS_TEMPLATE = REDIRECT_KEYS.reduce((options, key) => {
 // Load the options menu with our settings.
 document.addEventListener("DOMContentLoaded", () => {
 
+
   // Defaults.
   Object.entries(SETTINGS_LIST).forEach(([key, { defaultValue: value, values }]) => {
     const settingButton = document.getElementById(key);
