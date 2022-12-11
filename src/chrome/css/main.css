@@ -86,7 +86,19 @@ html[global_enable="true"][remove_entire_sidebar="true"] ytd-watch-flexy[flexy][
 	--ytd-watch-flexy-max-player-width: calc(var(--ytd-watch-flexy-chat-max-height)*var(--ytd-watch-flexy-width-ratio)/var(--ytd-watch-flexy-height-ratio)) !important
 }
 
-/* Center contents when the leftbar is completely disabled */
-html[global_enable="true"][remove_leftbar="true"] #page-manager[class="style-scope ytd-app"]{
+/* Centers the contents on the homepage and subscriptions page when sidebar is disabled */
+html[global_enable="true"][remove_leftbar="true"]
+  #page-manager[class="style-scope ytd-app"] {
+  margin-left: 0px;
+}
+
+/* Maintains the proper arrangement of the contents of watch later and playlist section */
+html[global_enable="true"][remove_leftbar="true"]
+  #contents[class="style-scope ytd-playlist-video-list-renderer"] {
+  margin-left: 240px;
+}
+
+html[global_enable="true"][remove_leftbar="true"]
+  #sort-filter-menu[class="style-scope ytd-playlist-video-list-renderer"] {
   margin-left: 240px;
 }
