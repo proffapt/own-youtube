@@ -36,6 +36,7 @@ const SETTINGS_LIST = {
   "remove_premium_link":                { defaultValue: false, eventType: 'change' },
   "remove_films_link":                { defaultValue: false, eventType: 'change' },
   "remove_gaming_link":                { defaultValue: false, eventType: 'change' },
+  "remove_trending_link":                { defaultValue: false, eventType: 'change' },
   "remove_live_link":                { defaultValue: false, eventType: 'change' },
   "remove_fashion_link":                { defaultValue: false, eventType: 'change' },
   "remove_learning_link":                { defaultValue: false, eventType: 'change' },
