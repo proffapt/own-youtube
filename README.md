@@ -100,7 +100,7 @@ _To get a local copy up and running follow these simple steps._
 
 3. Toggle the **DEVELOPER MODE** on top right corner
 
-4. Click **LOAD UNPACKED** option and select the `src` folder from the cloned repository.
+4. Click **LOAD UNPACKED** option and select the `src/chrome` folder from the cloned repository.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -143,10 +143,10 @@ _To get a local copy up and running follow these simple steps._
 ## Miscelleneous
 
 Do consider looking at other paradigms of this documentation
-  - [Change-logs](CHANGELOG.md)
-  - [License used](LICENSE.txt)
-  - [Code Of Conduct](CODE_OF_CONDUCT.md)
-  - [How to contribute?](CONTRIBUTING.md)
+  - [Change-logs](/.github/CHANGELOG.md)
+  - [License used](/LICENSE.txt)
+  - [Code Of Conduct](/.github/CODE_OF_CONDUCT.md)
+  - [How to contribute?](/.github/CONTRIBUTING.md)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
