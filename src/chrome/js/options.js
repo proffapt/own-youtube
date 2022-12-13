@@ -34,6 +34,7 @@ const SETTINGS_LIST = {
   "remove_subscriptions_pane":            { defaultValue: false, eventType: 'click' },
   "remove_explore_pane":            { defaultValue: false, eventType: 'change' },
   "remove_moreFromYT_pane":            { defaultValue: false, eventType: 'change' },
+  "remove_videoComments":            { defaultValue: false, eventType: 'change' },
   "remove_footer_pane":            { defaultValue: false, eventType: 'click' },
   "remove_premium_link":                { defaultValue: false, eventType: 'click' },
   "remove_films_link":                { defaultValue: false, eventType: 'click' },
