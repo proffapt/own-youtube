@@ -28,6 +28,8 @@ html[global_enable="true"][remove_yourvideos_link="true"] ytd-guide-entry-render
 html[global_enable="true"][remove_watchlater_link="true"] a[href="/playlist?list=WL"],
 html[global_enable="true"][remove_likedvideos_link="true"] a[href="/playlist?list=LL"],
 html[global_enable="true"][remove_subscriptions_pane="true"] div[id="sections"]> :nth-child(2),
+html[global_enable="true"][remove_explore_pane="true"] div[id="sections"]> :nth-child(3),
+html[global_enable="true"][remove_moreFromYT_pane="true"] div[id="sections"]> :nth-child(4),
 html[global_enable="true"][remove_footer_pane="true"] div[id="footer"],
 html[global_enable="true"][remove_premium_link="true"] a[href="/premium"],
 html[global_enable="true"][remove_films_link="true"] a[href="/feed/storefront?bp=ogUCKAI%3D"],

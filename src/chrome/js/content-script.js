@@ -32,6 +32,8 @@ const SETTINGS_LIST = {
   "remove_watchlater_link":                { defaultValue: false, eventType: 'change' },
   "remove_likedvideos_link":                { defaultValue: false, eventType: 'change' },
   "remove_subscriptions_pane":            { defaultValue: false, eventType: 'change' },
+  "remove_explore_pane":            { defaultValue: false, eventType: 'change' },
+  "remove_moreFromYT_pane":            { defaultValue: false, eventType: 'change' },
   "remove_footer_pane":            { defaultValue: false, eventType: 'change' },
   "remove_premium_link":                { defaultValue: false, eventType: 'change' },
   "remove_films_link":                { defaultValue: false, eventType: 'change' },
