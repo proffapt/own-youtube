@@ -60,6 +60,7 @@ html[global_enable="true"][remove_chat="true"] #chat,
 html[global_enable="true"][remove_info_cards="true"] .ytp-ce-element.ytp-ce-element,
 html[global_enable="true"][remove_menu_buttons="true"] #menu-container,
 html[global_enable="true"][remove_embedded_more_videos="true"] div.ytp-pause-overlay,
+html[global_enable="true"][remove_videoComments="true"] ytd-comments[id="comments"] > ytd-item-section-renderer[id="sections"],
 
 /* Search Results Page */
 html[global_enable="true"][on_results_page="true"][remove_extra_results="true"] ytd-shelf-renderer,
@@ -100,4 +101,18 @@ html[global_enable="true"][remove_leftbar="true"]
 html[global_enable="true"][remove_leftbar="true"]
   #sort-filter-menu[class="style-scope ytd-playlist-video-list-renderer"] {
   margin-left: 240px;
+}
+
+/* Centers the contents on the screen after video comments are removed */
+
+html[global_enable="true"][remove_videoComments="true"]
+  div#secondary {
+  margin-top: 240px;
+  margin-left: -62.5%;
+  width: 52.5%;
+}
+
+html[global_enable="true"][remove_videoComments="true"]
+  div#above-the-fold {
+    width: 85%;
 }
