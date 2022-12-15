@@ -12,9 +12,10 @@ const SETTINGS_LIST = {
   "remove_homepage":                   { defaultValue: true,  eventType: 'click' },
   "remove_sidebar":                    { defaultValue: true,  eventType: 'click' },
   "remove_leftbar":                    { defaultValue: true,  eventType: 'click' },
-  "remove_avatar":                    { defaultValue: true,  eventType: 'click' },
-  "remove_notification":                    { defaultValue: true,  eventType: 'click' },
-  "remove_youtubeapps":                    { defaultValue: true,  eventType: 'click' },
+  "remove_avatar":                    { defaultValue: false,  eventType: 'click' },
+  "remove_top_bar":                    { defaultValue: true,  eventType: 'change' },
+  "remove_notification":                    { defaultValue: false,  eventType: 'click' },
+  "remove_youtubeapps":                    { defaultValue: false,  eventType: 'click' },
   "remove_end_of_video":               { defaultValue: true,  eventType: 'click' },
 
   "remove_all_but_one":                { defaultValue: false, eventType: 'click' },
