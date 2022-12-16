@@ -14,6 +14,7 @@ html[global_enable="true"][remove_end_of_video="true"] .html5-endscreen,
 html[global_enable="true"][remove_youtubeapps="true"] yt-icon-button[class="style-scope ytd-topbar-menu-button-renderer style-default"],
 html[global_enable="true"][remove_avatar="true"] button[id="avatar-btn"],
 html[global_enable="true"][remove_notification="true"] yt-icon-button[class="style-scope ytd-notification-topbar-button-renderer"],
+html[global_enable="true"][remove_top_bar="true"] div#end > div#buttons,
 
 /* Left Bar Navigation */
 html[global_enable="true"][remove_home_link="true"] a:not(#logo)[href="/"],
