@@ -49,6 +49,18 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
+    <li><a href="#features">Features</a>
+      <ul>
+        <li><a href="#basic">Basic</a></li>
+        <li><a href="#topbar">Top Bar Elements</a></li>
+        <li><a href="#homepage">Homepage</a></li>
+        <li><a href="#leftbar">Left Navigation Bar</a></li>
+        <li><a href="#moreyt">More from Youtube</a></li>
+        <li><a href="#videoply">Video Player</a></li>
+        <li><a href="#remelem">Remove Element Options</a></li>
+        <li><a href="#searchres">Search Results</a></li>
+      </ul>
+    </li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
     <li><a href="#miscelleneous">Miscelleneous</a></li>    
@@ -108,18 +120,21 @@ _To get a local copy up and running follow these simple steps._
 - **Home Page** : Hide the entire Home Page
 - **Side Bar** : Hide the Side Bar (when watching a video)
 - **End of Video** 
+<div id="topbar"></div><p align="right">(<a href="#top">back to top</a>)</p>
 
 ### Top Bar Elements
 
 - **Youtube Apps and Create**
 - **Notifications**
 - **Avatar** : Hide your user profile logo (links to settings)
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 ### Homepage
 
 - **All but First row** : Hides all the video thumbnaikls except the topmost row
 - **Infinite Scroll** : Limits your number of video reccomendations on the Home Page
 - **Extra Rows** : Hides extras like shorts, trending, etc.
+<div id="leftbar"></div><p align="right">(<a href="#top">back to top</a>)</p>
 
 ### Left Navigation Bar
 
@@ -135,6 +150,7 @@ _To get a local copy up and running follow these simple steps._
 - **Watch Later**
 - **Liked Videos**
 - **Subscriptions Pane** : The actual list of subscribed channels
+<div id="moreyt"></div><p align="right">(<a href="#top">back to top</a>)</p>
 
 ### More from Youtube
 
@@ -150,6 +166,7 @@ _To get a local copy up and running follow these simple steps._
 - **YouTube Music**
 - **YouTube Kids**
 - **Footer Pane**
+<div id="videoply"></div><p align="right">(<a href="#top">back to top</a>)</p>
 
 ### Video Player
 
@@ -157,6 +174,7 @@ _To get a local copy up and running follow these simple steps._
 - **Center Content** : Remove the left and right panes, and center the video player
 - **Disable Autoplay**
 - **Redirect Shorts** : Play shorts in the normal video player
+<div id="remelem"></div><p align="right">(<a href="#top">back to top</a>)</p>
 
 ### Remove Element Options
 
@@ -166,16 +184,19 @@ _To get a local copy up and running follow these simple steps._
 - **Comments**
 - **ChatLive-Streaming** : Remove the Live Stream chat
 - **More videos (embedded player)** : Remove the video reccommendations that appear when paused
+<div id="searchres"></div><p align="right">(<a href="#top">back to top</a>)</p>
 
 ### Search Results page
 
 - **Extra results** : Remove extra 'For You' 'Also Watch' results
 - **Shorts results**
 - **Thumbnail slideshow** : Don't play the preview of video upon hovering on thumbnail
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 ### Redirect the HomePage
 
 Redirect where clicking the Youtube Logo takes you
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- CONTACT -->
 ## Contact
