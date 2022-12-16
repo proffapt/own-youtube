@@ -58,13 +58,8 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-<div align="center">
-  <a href="https://github.com/proffapt/own-youtube">
-    <img src="images/screenshot.png" alt="product screenshot" width="250" height="350">
-  </a>
-</div>
 
-YouTube these days has become as one of the main source of distractions, leading us to waste time on binge watching shit. This extension will remove every element you ever wanted, to completely remove distraction leading elements.
+Have you ever sat down to watch that one important video on Youtube, and got up 3 hours later with no memory what you opened Youtube for? Well,experience that no more with this browser extension, that lets you remove any and all sources of distractions on the website.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -102,8 +97,85 @@ _To get a local copy up and running follow these simple steps._
 
 4. Click **LOAD UNPACKED** option and select the `src/chrome` folder from the cloned repository.
 
+5. Refresh Youtube if the extension doesn't function
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+## Features
+
+### Basic
+
+- **Home Page** : Hide the entire Home Page
+- **Side Bar** : Hide the Side Bar (when watching a video)
+- **End of Video** 
+
+### Top Bar Elements
+
+- **Youtube Apps and Create**
+- **Notifications**
+- **Avatar** : Hide your user profile logo (links to settings)
+
+### Homepage
+
+- **All but First row** : Hides all the video thumbnaikls except the topmost row
+- **Infinite Scroll** : Limits your number of video reccomendations on the Home Page
+- **Extra Rows** : Hides extras like shorts, trending, etc.
+
+### Left Navigation Bar
+
+- **Complete Bar** : Completely removes the left navigation bar
+- **Logo link** : Makes the logo not clickable (to link to the homepage)
+- **Home**
+- **Explore**
+- **Shorts**
+- **Subscriptions**
+- **Library**
+- **History**
+- **Your Videos**
+- **Watch Later**
+- **Liked Videos**
+- **Subscriptions Pane** : The actual list of subscribed channels
+
+### More from Youtube
+
+- **Premium**
+- **Films**
+- **Trending**
+- **Gaming**
+- **Live**
+- **Fashion**
+- **Learning**
+- **Sports**
+- **Creator Studio**
+- **YouTube Music**
+- **YouTube Kids**
+- **Footer Pane**
+
+### Video Player
+
+- **Remove Ads** : Play Ads at 5x and auto-skip
+- **Center Content** : Remove the left and right panes, and center the video player
+- **Disable Autoplay**
+- **Redirect Shorts** : Play shorts in the normal video player
+
+### Remove Element Options
+
+- **In-video info cards**
+- **Play-next button**
+- **Menu buttons** : Remove the Like, Dislike, Share, etc
+- **Comments**
+- **ChatLive-Streaming** : Remove the Live Stream chat
+- **More videos (embedded player)** : Remove the video reccommendations that appear when paused
+
+### Search Results page
+
+- **Extra results** : Remove extra 'For You' 'Also Watch' results
+- **Shorts results**
+- **Thumbnail slideshow** : Don't play the preview of video upon hovering on thumbnail
+
+### Redirect the HomePage
+
+Redirect where clicking the Youtube Logo takes you
 
 <!-- CONTACT -->
 ## Contact
