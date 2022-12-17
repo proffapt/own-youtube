@@ -119,7 +119,7 @@ _To get a local copy up and running follow these simple steps._
 
 - **Home Page** : Hide the entire Home Page
 - **Side Bar** : Hide the Side Bar (when watching a video)
-- **End of Video** 
+- **End of Video** : Hide the video reccomendations that appear at the end of a video
 <div id="topbar"></div><p align="right">(<a href="#top">back to top</a>)</p>
 
 ### Top Bar Elements
@@ -195,8 +195,14 @@ _To get a local copy up and running follow these simple steps._
 
 ### Redirect the HomePage
 
-Redirect where clicking the Youtube Logo takes you
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Redirect where clicking the Youtube Logo takes you
 <p align="right">(<a href="#top">back to top</a>)</p>
+
+## The extension in action
+
+#### Homepage
+
+<img src="images\homepage.png" alt="Distraction free homepage"></img>
 
 <!-- CONTACT -->
 ## Contact
