@@ -33,7 +33,7 @@ html[dark_mode*='system'] #header-system-theme  { display: block }
 #header-logo:hover {
   height: 98%;
 }
-html[dark_mode='true'] #header-logo{
+html[dark_mode^='true'] #header-logo{
   filter: invert(90%);
 }
 #header-text {
