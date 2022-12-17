@@ -61,6 +61,7 @@
         <li><a href="#searchres">Search Results</a></li>
       </ul>
     </li>
+    <li><a href="#screenshots">Extension in Action</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
     <li><a href="#miscelleneous">Miscelleneous</a></li>    
@@ -71,7 +72,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Have you ever sat down to watch that one important video on Youtube, and got up 3 hours later with no memory what you opened Youtube for? Well,experience that no more with this browser extension, that lets you remove any and all sources of distractions on the website.
+Have you ever sat down to watch that one important video on Youtube, and got up 3 hours later with no memory what you opened Youtube for? Well, experience that no more with this browser extension, that lets you remove any and all sources of distractions on the website.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -199,10 +200,13 @@ _To get a local copy up and running follow these simple steps._
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ## The extension in action
+<br>
 
-#### Homepage
-
-<img src="images\homepage.png" alt="Distraction free homepage"></img>
+<div align="center" id="screenshots">
+<img src="images/homepage.png" alt="Distraction free homepage" width="800"></img>
+<img src="images/centered-video-player1.png" alt="Centered video player" width="800"></img>
+</div>
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- CONTACT -->
 ## Contact
