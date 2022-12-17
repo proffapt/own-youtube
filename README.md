@@ -72,8 +72,8 @@ YouTube these days has become as one of the main source of distractions, leading
 
 ### Supports:
 
-1. Browser
-	* Chrome
+* [Chrome](https://www.google.com/chrome/index.html) and other [Chrmoium](https://www.chromium.org/getting-involved/download-chromium/) based browsers
+* [Firefox](https://www.mozilla.org/en-US/firefox/new/) and its derivatives
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -95,13 +95,24 @@ This project is made with following langs/frameworks.
 _To get a local copy up and running follow these simple steps._
 
 1. Clone the repository with `git clone https://github.com/proffapt/own-youtube`.
+2. Now depending upon your browser of choice, follow the steps in respective sections:
 
-2. Type `chrome://extensions` on search bar
+	- [Chrome](#chrome)
+	- [Firefox](#firefox)
 
-3. Toggle the **DEVELOPER MODE** on top right corner
+	#### Chrome
 
-4. Click **LOAD UNPACKED** option and select the `src/chrome` folder from the cloned repository.
+	1. Type `chrome://extensions` on search bar
+	2. Toggle the **DEVELOPER MODE** on top right corner
+	3. Click **LOAD UNPACKED** option and select the `src/chrome` folder from the cloned repository.
 
+	#### Firefox
+	
+	1. Type `about:debugging#/runtime/this-firefox` on search bar
+	2. Click on the `Load Temporary Add-on...` button under **Load Temporary Extensions** Section
+	3. Navigate to `src/firefox` folder in your opened file navigator
+	4. Select the `manifest.json` file inside it and press **open**
+	
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
