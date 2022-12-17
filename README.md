@@ -47,6 +47,10 @@
       <a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#installation">Installation</a></li>
+			<ul>
+				<li><a href="#chrome">Chrome</a></li>
+				<li><a href="#firefox">Firefox</a></li>
+			</ul>
       </ul>
     </li>
     <li><a href="#contact">Contact</a></li>
