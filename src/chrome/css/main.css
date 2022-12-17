@@ -104,6 +104,13 @@ html[global_enable="true"][remove_leftbar="true"]
   margin-left: 240px;
 }
 
+/* Maintains the proper alignment of alertboxes in watch later and playlist section whenever they occur; they do not occur everytime */
+html[global_enable="true"][remove_leftbar="true"]
+  ytd-browse > div#alerts > ytd-alert-with-button-renderer {
+  margin-left: 240px;
+  width: 70%;
+}
+
 /* Centers the contents on the screen after video comments are removed */
 
 html[global_enable="true"][remove_videoComments="true"]
