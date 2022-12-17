@@ -1,0 +1,144 @@
+
+:root {
+  --body-height: 400px;
+}
+
+#disabled {
+  text-align: center;
+  height: var(--body-height);
+  padding: 1px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+#primary_options {
+  height: var(--body-height);
+  overflow: scroll;
+  overflow-x: hidden;
+  padding: 1px;
+  padding-top: 10px;
+
+  -webkit-transition: box-shadow 0.1s;
+  -moz-transition: box-shadow 0.1s;
+  -o-transition: box-shadow 0.1s;
+  transition: box-shadow 0.1s;
+}
+
+#primary_options div {
+  height: 15px;
+}
+
+#primary_options div:not(:last-child) {
+  margin-bottom: 4px;
+}
+
+#primary_options .field {
+  margin-bottom: 10px;
+}
+
+#primary_options .field:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.field {
+  padding-left: 12px;
+  box-sizing: border-box;
+  border: none;
+  border-top-left-radius: 3px;
+  border-top: 1px solid var(--border-color);
+  border-left: 1px solid var(--border-color);
+  overflow: visible;
+}
+
+
+summary {
+  font-weight: bold;
+  color: var(--hover-fieldset-legend-color);
+  position: relative;
+  top: -10px;
+  width: fit-content;
+  background-color: var(--body-background-color);
+}
+
+label {
+  position: relative;
+}
+
+.tooltip {
+  position: absolute;
+  height: 95%;
+
+  /* center vertically */
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+
+  margin-left: 1px;
+}
+.tooltip:hover {
+  height: 110%;
+}
+
+.option_name_container {
+  cursor: default;
+}
+
+/* Redirect options */
+.redirect_link {
+  text-decoration: none;
+}
+.redirect_off, .redirect_to_subs, .redirect_to_wl {
+  display: inline-block;
+}
+
+/* Manage history */
+#manage_history_container {
+  text-align: center;
+  height: 20px;
+  padding-top: 5px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  border: 1px groove gray;
+}
+#manage_history {
+  text-align: right;
+}
+
+input[type="checkbox"]{
+  appearance: none;
+  cursor: pointer;
+  margin: 0;
+  border: 1px solid var(--body-color);
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+  transform: translateY(-0.5px);
+  display: grid;
+  place-content: center;
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  transform: scale(1);
+  transition: 120ms transform ease-in-out;
+  border-radius: 3px;
+  background-color: var(--checkbox-color);
+}
+
+input[type="checkbox"]:checked::before {
+  transform: scale(0);
+}
+
+input[type="checkbox"]+input[type="checkbox"]{
+  margin-top: 0;
+}
+
+input[type="checkbox"] + label{
+  position: relative;
+  top: -14px;
+  left: 16px;
+}

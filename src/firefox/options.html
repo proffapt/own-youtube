@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+
+<html dark_mode='on'>
+  <head>
+    <meta charset="utf-8">
+    <title>Own YouTube</title>
+    <link rel="stylesheet" type="text/css" href="css/options/general.css">
+    <link rel="stylesheet" type="text/css" href="css/options/header.css">
+    <link rel="stylesheet" type="text/css" href="css/options/body.css">
+    <link rel="stylesheet" type="text/css" href="css/options/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <div id='header'>
+      <div id='header-contents'>
+        <a href='https://github.com/proffapt/own-youtube' target='_blank'>
+          <img id='header-logo' src="images/oyt.svg"></img>
+        </a>
+
+        <div id='header-text'>Own YouTube</div>
+
+        <div id='dark_mode'>
+          <a title='System Default Theme'>
+            <svg id='header-system-theme' class='dark_mode' viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path fill="currentColor" d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8V16Z" />
+              <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2ZM12 4V8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16V20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4Z" fill="currentColor" />
+            </svg>
+          </a>
+          <a title='Dark Mode'>
+            <svg id='header-light' class='dark_mode' viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <circle fill="#464646" cx="12" cy="12" r="5"/>
+              <path fill="#464646" d="M21,13H20a1,1,0,0,1,0-2h1a1,1,0,0,1,0,2Z"/>
+              <path fill="#464646" d="M4,13H3a1,1,0,0,1,0-2H4a1,1,0,0,1,0,2Z"/>
+              <path fill="#464646" d="M17.66,7.34A1,1,0,0,1,17,7.05a1,1,0,0,1,0-1.41l.71-.71a1,1,0,1,1,1.41,1.41l-.71.71A1,1,0,0,1,17.66,7.34Z"/>
+              <path fill="#464646" d="M5.64,19.36a1,1,0,0,1-.71-.29,1,1,0,0,1,0-1.41L5.64,17a1,1,0,0,1,1.41,1.41l-.71.71A1,1,0,0,1,5.64,19.36Z"/>
+              <path fill="#464646" d="M12,5a1,1,0,0,1-1-1V3a1,1,0,0,1,2,0V4A1,1,0,0,1,12,5Z"/>
+              <path fill="#464646" d="M12,22a1,1,0,0,1-1-1V20a1,1,0,0,1,2,0v1A1,1,0,0,1,12,22Z"/>
+              <path fill="#464646" d="M6.34,7.34a1,1,0,0,1-.7-.29l-.71-.71A1,1,0,0,1,6.34,4.93l.71.71a1,1,0,0,1,0,1.41A1,1,0,0,1,6.34,7.34Z"/>
+              <path fill="#464646" d="M18.36,19.36a1,1,0,0,1-.7-.29L17,18.36A1,1,0,0,1,18.36,17l.71.71a1,1,0,0,1,0,1.41A1,1,0,0,1,18.36,19.36Z"/>
+            </svg>
+          </a>
+          <a title='Light Mode'>
+            <svg id='header-dark' class='dark_mode' viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path fill="#FFFFFF" d="M20.21,15.32A8.56,8.56,0,1,1,11.29,3.5a.5.5,0,0,1,.51.28.49.49,0,0,1-.09.57A6.46,6.46,0,0,0,9.8,9a6.57,6.57,0,0,0,9.71,5.72.52.52,0,0,1,.58.07A.52.52,0,0,1,20.21,15.32Z"/>
+            </svg>
+          </a>
+        </div>
+
+        <a title='On/Off'>
+          <svg id="header-toggle" class='global_enable header-toggle' viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+            <path id='header-toggle-outer-path' fill="gray"  d="M 11, 3 H 5 C 2.239, 3, 0, 5.239, 0, 8 s 2.239, 5, 5, 5 h 6 c 2.761, 0, 5 -2.239, 5 -5 S 13.761, 3, 11, 3 z"/>
+            <circle id='header-toggle-circle' fill="white" cx="5" cy="8" r="3"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <div id="disabled">
+      <h1>Own YouTube is disabled.</h1>
+    </div>
+
+    <div id="primary_options">
+      <details open class="field">
+        <summary>Basic</summary>
+
+        <div>
+            <input type="checkbox" id="remove_homepage" class="remove_homepage"
+                   value="remove_homepage" checked />
+            <label for="remove_homepage">
+              Homepage
+            </label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="remove_sidebar" class="remove_sidebar"
+                   value="remove_sidebar" checked />
+            <label for="remove_sidebar">
+              Sidebar
+            </label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="remove_end_of_video" class="remove_end_of_video"
+                   value="remove_end_of_video" checked />
+            <label for="remove_end_of_video">
+              End of video
+            </label>
+        </div>
+		
+		<hr style="margin-top: 15px">
+        <div><b>Top bar elements</b></div>
+        
+        <div>
+          <input type="checkbox" id="remove_top_bar" class="remove_top_bar"
+                 value="remove_top_bar" checked />
+          <label for="remove_top_bar">
+            >> Complete Top Bar
+            <img class="tooltip" src="images/tooltip.svg" title="Removes top bar elements except search and YouTube logo">
+          </label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="remove_youtubeapps" class="remove_youtubeapps"
+                   value="remove_youtubeapps" checked />
+            <label for="remove_youtubeapps">
+              YouTube apps & Create
+            </label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="remove_notification" class="remove_notification"
+                   value="remove_notification" checked />
+            <label for="remove_notification">
+              Notification
+            </label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="remove_avatar" class="remove_avatar"
+                   value="remove_avatar" checked />
+            <label for="remove_avatar">
+              Avatar
+            </label>
+        </div>
+
+      </details>
+
+      <details open class="field">
+        <summary>Homepage</summary>
+        
+        <div>
+            <input type="checkbox" id="remove_all_but_one" class="remove_all_but_one"
+                   value="remove_all_but_one" unchecked />
+            <label for="remove_all_but_one">
+              All but first row
+            </label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="remove_infinite_scroll" class="remove_infinite_scroll"
+                   value="remove_infinite_scroll" unchecked />
+            <label for="remove_infinite_scroll">
+              Infinite scroll
+            </label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="remove_extra_rows" class="remove_extra_rows"
+                   value="remove_extra_rows" unchecked />
+            <label for="remove_extra_rows">
+              Extra rows
+              <img class="tooltip" src="images/tooltip.svg" title="Shorts, trending, etc.">
+            </label>
+        </div>
+
+      </details>
+
+      <details open class="field">
+        <summary>Left Navigation Bar</summary>
+
+        <div>
+            <input type="checkbox" id="remove_leftbar" class="remove_leftbar"
+                   value="remove_leftbar" unchecked />
+            <label for="remove_leftbar">
+              >> Complete Bar
+              <img class="tooltip" src="images/tooltip.svg" title="Remove the left navigation bar completely.">
+            </label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="remove_logo_link" class="remove_logo_link"
+                   value="remove_logo_link" unchecked />
+            <label for="remove_logo_link">
+              Logo link
+              <img class="tooltip" src="images/tooltip.svg" title="Shortcut to the homepage from the YouTube logo.">
+            </label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="remove_home_link" class="remove_home_link"
+                   value="remove_home_link" unchecked />
+            <label for="remove_home_link">
+              Home
+            </label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="remove_explore_link" class="remove_explore_link"
+                   value="remove_explore_link" unchecked />
+            <label for="remove_explore_link">
+              Explore
+            </label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="remove_shorts_link" class="remove_shorts_link"
+                   value="remove_shorts_link" unchecked />
+            <label for="remove_shorts_link">
+              Shorts
+            </label>
+        </div>
+
+		<div>
+			<input type="checkbox" id="remove_subscriptions_link" class="remove_subscriptions_link"
+				   value="remove_subscriptions_link" unchecked />
+			<label for="remove_subscriptions_link">
+			  Subscriptions
+			</label>
+		</div>
+
+		<div>
+			<input type="checkbox" id="remove_library_link" class="remove_library_link"
+				   value="remove_library_link" unchecked />
+			<label for="remove_library_link">
+			  Library
+			</label>
+		</div>
+
+		<div>
+			<input type="checkbox" id="remove_history_link" class="remove_history_link"
+				   value="remove_history_link" unchecked />
+			<label for="remove_history_link">
+			  History
+			</label>
+		</div>
+
+		<div>
+			<input type="checkbox" id="remove_yourvideos_link" class="remove_yourvideos_link"
+				   value="remove_yourvideos_link" unchecked />
+			<label for="remove_yourvideos_link">
+			  Your Videos
+			</label>
+		</div>
+
+        <div>
+            <input type="checkbox" id="remove_watchlater_link" class="remove_watchlater_link"
+                   value="remove_watchlater_link" unchecked />
+            <label for="remove_watchlater_link">
+              Watch Later
+            </label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="remove_likedvideos_link" class="remove_likedvideos_link"
+                   value="remove_likedvideos_link" unchecked />
+            <label for="remove_likedvideos_link">
+              Liked Videos
+            </label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="remove_subscriptions_pane" class="remove_subscriptions_pane"
+                   value="remove_subscriptions_pane" unchecked />
+            <label for="remove_subscriptions_pane">
+              > Subscriptions Pane
+            </label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="remove_explore_pane" class="remove_explore_pane"
+                 value="remove_explore_pane" unchecked />
+          <label for="remove_explore_pane">
+            > Explore Pane
+          </label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="remove_moreFromYT_pane" class="remove_moreFromYT_pane"
+                 value="remove_moreFromYT_pane" unchecked />
+          <label for="remove_moreFromYT_pane">
+            > More from YouTube Pane
+          </label>
+      </div>
+		<br>
+		
+		<details open class="field">
+			<summary>More From Youtube</summary>
+
+        <div>
+			<input type="checkbox" id="remove_premium_link" class="remove_premium_link"
+			value="remove_premium_link" unchecked />
+            <label for="remove_premium_link">
+				Premium
+            </label>
+        </div>
+		
+        <div>
+			<input type="checkbox" id="remove_films_link" class="remove_films_link"
+			value="remove_films_link" unchecked />
+            <label for="remove_films_link">
+				Films
+            </label>
+        </div>
+  
+        <div>
+          <input type="checkbox" id="remove_trending_link" class="remove_trending_link"
+          value="remove_trending_link" unchecked />
+                <label for="remove_trending_link">
+            Trending
+                </label>
+        </div>
+        
+        <div>
+			<input type="checkbox" id="remove_gaming_link" class="remove_gaming_link"
+			value="remove_gaming_link" unchecked />
+            <label for="remove_gaming_link">
+				Gaming
+            </label>
+        </div>
+        <div>
+			<input type="checkbox" id="remove_live_link" class="remove_live_link"
+			value="remove_live_link" unchecked />
+            <label for="remove_live_link">
+				Live
+            </label>
+        </div>
+        <div>
+			<input type="checkbox" id="remove_fashion_link" class="remove_fashion_link"
+			value="remove_fashion_link" unchecked />
+            <label for="remove_fashion_link">
+				Fashion
+            </label>
+        </div>
+        <div>
+			<input type="checkbox" id="remove_learning_link" class="remove_learning_link"
+			value="remove_learning_link" unchecked />
+            <label for="remove_learning_link">
+				Learning
+            </label>
+        </div>
+        <div>
+			<input type="checkbox" id="remove_sports_link" class="remove_sports_link"
+			value="remove_sports_link" unchecked />
+            <label for="remove_sports_link">
+				Sports
+            </label>
+        </div>
+
+        <div>
+			<input type="checkbox" id="remove_creatorStudio_link" class="remove_creatorStudio_link"
+			value="remove_creatorStudio_link" unchecked />
+            <label for="remove_creatorStudio_link">
+				Creator Studio
+            </label>
+        </div>
+        
+        <div>
+			<input type="checkbox" id="remove_music_link" class="remove_music_link"
+			value="remove_music_link" unchecked />
+            <label for="remove_music_link">
+				YouTube Music
+            </label>
+        </div>
+
+        <div>
+			<input type="checkbox" id="remove_kids_link" class="remove_kids_link"
+			value="remove_kids_link" unchecked />
+            <label for="remove_kids_link">
+				YouTube Kids
+            </label>
+        </div>
+
+        <div>
+			<input type="checkbox" id="remove_tv_link" class="remove_tv_link"
+			value="remove_tv_link" unchecked />
+            <label for="remove_tv_link">
+				YouTube TV
+            </label>
+        </div>
+
+    </details>
+		
+		<div>
+			<input type="checkbox" id="remove_footer_pane" class="remove_footer_pane"
+				   value="remove_footer_pane" unchecked />
+			<label for="remove_footer_pane">
+			  > Footer Pane
+			</label>
+		</div>
+
+	</details>
+	
+	<details open class="field">
+		<summary>Video Player</summary>
+		
+        <div style="margin-top: 5px"><b>Dynamic options</b></div>
+        <div>
+			<input type="checkbox" id="auto_skip_ads" class="auto_skip_ads"
+			value="auto_skip_ads" unchecked />
+            <label for="auto_skip_ads">
+              Remove ads
+              <img class="tooltip" src="images/tooltip.svg" title="Clicks the 'skip-ad' button if it exists. Closes the overlay ad if it exists. Speeds (5x) through unskippable ads.">
+            </label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="remove_entire_sidebar" class="remove_entire_sidebar"
+                   value="remove_entire_sidebar" unchecked />
+            <label for="remove_entire_sidebar">
+              Center contents
+              <img class="tooltip" src="images/tooltip.svg" title="Removes the entire sidebar.">
+            </label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="disable_autoplay" class="disable_autoplay"
+                   value="disable_autoplay" unchecked />
+            <label for="disable_autoplay">
+              Disable autoplay
+              <img class="tooltip" src="images/tooltip.svg" title="Always toggles 'autoplay' to off.">
+            </label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="normalize_shorts" class="normalize_shorts"
+                   value="normalize_shorts" unchecked />
+            <label for="normalize_shorts">
+              Redirect shorts
+              <img class="tooltip" src="images/tooltip.svg" title="Redirects the autoplaying 'shorts' player to the regular video player.">
+            </label>
+        </div>
+        
+        <div>
+          <input type="checkbox" id="remove_videoComments" class="remove_videoComments"
+                 value="remove_videoComments" unchecked />
+          <label for="remove_videoComments">
+            Video Comments
+          </label>
+        </div>
+
+        <hr style="margin-top: 15px">
+        <div><b>Remove element options</b></div>
+        <div>
+            <input type="checkbox" id="remove_info_cards" class="remove_info_cards"
+                   value="remove_info_cards" unchecked />
+            <label for="remove_info_cards">
+              In-video info cards
+              <img class="tooltip" src="images/tooltip.svg" title="Often appear at the end of a video.">
+            </label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="remove_play_next_button" class="remove_play_next_button"
+                   value="remove_play_next_button" unchecked />
+            <label for="remove_play_next_button">
+              Play-next button
+            </label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="remove_menu_buttons" class="remove_menu_buttons"
+                   value="remove_menu_buttons" unchecked />
+            <label for="remove_menu_buttons">
+              Menu buttons
+              <img class="tooltip" src="images/tooltip.svg" title="Like, dislike, share, etc.">
+            </label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="remove_comments" class="remove_comments"
+                   value="remove_comments" unchecked />
+            <label for="remove_comments">
+              Comments
+            </label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="remove_chat" class="remove_chat"
+                   value="remove_chat" unchecked />
+            <label for="remove_chat">
+              Chat
+              <img class="tooltip" src="images/tooltip.svg" title="Live-Streaming">
+            </label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="remove_embedded_more_videos" class="remove_embedded_more_videos"
+                   value="remove_embedded_more_videos" unchecked />
+            <label for="remove_embedded_more_videos">
+              More videos (embedded player)
+              <img class="tooltip" src="images/tooltip.svg" title="Panel that appears in embedded videos when paused.">
+            </label>
+        </div>
+      </details>
+
+      <details open class="field">
+        <summary>Search Results Page</summary>
+
+        <div>
+            <input type="checkbox" id="remove_extra_results" class="remove_extra_results"
+                   value="remove_extra_results" unchecked />
+            <label for="remove_extra_results">
+              Extra results
+              <img class="tooltip" src="images/tooltip.svg" title="For you, also watched, etc.">
+            </label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="remove_shorts_results" class="remove_shorts_results"
+                   value="remove_shorts_results" unchecked />
+            <label for="remove_shorts_results">
+              Shorts results
+            </label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="remove_thumbnail_mouseover_effect" class="remove_thumbnail_mouseover_effect"
+                   value="remove_thumbnail_mouseover_effect" unchecked />
+            <label for="remove_thumbnail_mouseover_effect">
+              Thumbnail slideshow
+              <img class="tooltip" src="images/tooltip.svg" title="Loop of images when hovering over a thumbnail.">
+            </label>
+        </div>
+
+      </details>
+
+      <details open class="field">
+        <summary>Redirect the<a class="redirect_link" href="https://www.youtube.com/" target="_blank"> Homepage ↗️</a></summary>
+
+        <div>
+            <input type="radio" id="redirect_to_subs" class="redirect_to_subs" name="redirect"
+                   value="redirect_to_subs" unchecked />
+            <label for="redirect_to_subs">
+              to Subscriptions
+            </label>
+            <a class="redirect_link" href="https://www.youtube.com/feed/subscriptions" target="_blank">↗️</a>
+        </div>
+
+        <div>
+            <input type="radio" id="redirect_to_wl" class="redirect_to_wl" name="redirect"
+                   value="redirect_to_wl" unchecked />
+            <label for="redirect_to_wl">
+              to Watch Later
+            </label>
+            <a class="redirect_link" href="https://www.youtube.com/playlist/?list=WL" target="_blank">↗️</a>
+        </div>
+
+        <div>
+            <input type="radio" id="redirect_off" class="redirect_off" name="redirect"
+                   value="redirect_off" checked />
+            <label for="redirect_off">
+              off
+            </label>
+        </div>
+
+      </details>
+
+    </div>
+
+    <a id='manage_history' href='https://myactivity.google.com/product/youtube' title="Too many cat video suggestions? Try removing cat videos from your watch history." target="_blank">
+    <div id='manage_history_container'>
+      YouTube History
+    </div></a>
+
+
+    <div id='footer'>
+      <a id='donate_button' href='https://proffapt.github.io' title='About me (proffapt)' target='_blank'>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 490.4 490.4">
+          <path class='footer-path' d="M59.7,86.8c22.6-22.6,52.7-35.1,84.7-35.1s62.2,12.5,84.9,35.2l7.4,7.4c2.3,2.3,5.4,3.6,8.7,3.6l0,0c3.2,0,6.4-1.3,8.7-3.6l7.2-7.2c22.7-22.7,52.8-35.2,84.9-35.2c32,0,62.1,12.5,84.7,35.1c22.7,22.7,35.1,52.8,35.1,84.8s-12.5,62.1-35.2,84.8L251,436.4c-2.9,2.9-8.2,2.9-11.2,0l-180-180c-22.7-22.7-35.2-52.8-35.2-84.8C24.6,139.6,37.1,109.5,59.7,86.8z" fill="white" stroke="black" stroke-width="30"/>
+        </svg>
+      </a>
+
+      <a id='info_button' href='https://github.com/proffapt/own-youtube/blob/main/README.md' title='Info' target="_blank">
+        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+          <path class='footer-path' d="M16,12a2,2,0,1,1,2-2A2,2,0,0,1,16,12Zm0-2Z"/>
+          <path class='footer-path' d="M16,29A13,13,0,1,1,29,16,13,13,0,0,1,16,29ZM16,5A11,11,0,1,0,27,16,11,11,0,0,0,16,5Z"/>
+          <path class='footer-path' d="M16,24a2,2,0,0,1-2-2V16a2,2,0,0,1,4,0v6A2,2,0,0,1,16,24Zm0-8v0Z"/>
+        </svg>
+      </a>
+
+      <a id='bug_button' href='https://github.com/proffapt/own-youtube/issues' title='Report a Bug / Feature Request' target="_blank">
+        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+          <path class='footer-path' d="M6.188,52.173A2,2,0,0,0,5,54v8H9V55.3l6.992-3.108a17.968,17.968,0,0,0,32.016,0L55,55.3V62h4V54a2,2,0,0,0-1.188-1.827l-8.39-3.729a17.858,17.858,0,0,0,.511-3.115l7.879-3.5A2,2,0,0,0,59,40V32H55v6.7l-5,2.223V30.3l7.812-3.472A2,2,0,0,0,59,25V17H55v6.7l-5.325,2.367A6.006,6.006,0,0,0,44,22H42V18a7.941,7.941,0,0,0-.99-3.847l3.239-2.591A2,2,0,0,0,45,10V5H41V9.039l-2.747,2.2A7.939,7.939,0,0,0,34,10H30a7.939,7.939,0,0,0-4.253,1.237L23,9.039V5H19v5a2,2,0,0,0,.751,1.562l3.239,2.591A7.941,7.941,0,0,0,22,18v4H20a6.006,6.006,0,0,0-5.675,4.067L9,23.7V17H5v8a2,2,0,0,0,1.188,1.827L14,30.3V40.923L9,38.7V32H5v8a2,2,0,0,0,1.188,1.827l7.879,3.5a17.858,17.858,0,0,0,.511,3.115ZM18,44V34H30V57.84A14.009,14.009,0,0,1,18,44ZM34,57.84V34H46V44A14.009,14.009,0,0,1,34,57.84ZM26,18a4,4,0,0,1,4-4h4a4,4,0,0,1,4,4v4H26Zm-6,8H44a2,2,0,0,1,2,2v2H18V28A2,2,0,0,1,20,26Z"/>
+        </svg>
+      </a>
+
+      <a id='reload_button' title='Refresh Page'>
+        <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+          <path class='footer-path' d="M35.3 12.7c-2.89-2.9-6.88-4.7-11.3-4.7-8.84 0-15.98 7.16-15.98 16s7.14 16 15.98 16c7.45 0 13.69-5.1 15.46-12h-4.16c-1.65 4.66-6.07 8-11.3 8-6.63 0-12-5.37-12-12s5.37-12 12-12c3.31 0 6.28 1.38 8.45 3.55l-6.45 6.45h14v-14l-4.7 4.7z"/>
+        </svg>
+      </a>
+
+    </div>
+
+
+    <script src="js/reload.js"></script>
+    <script src="js/options.js"></script>
+  </body>
+
+</html>
