@@ -12,7 +12,7 @@ html[global_enable="true"] #header-toggle-outer-path { fill: green }
 /* Dark mode styling */
 html[dark_mode='true'] #header-dark { display: block }
 html[dark_mode='false'] #header-light { display: block }
-html[dark_mode*='system'] #header-system-theme  { display: block }
+html[dark_mode='true system'] #header-system-theme  { display: block }
 
 #header-contents {
   position: relative;
@@ -34,6 +34,9 @@ html[dark_mode*='system'] #header-system-theme  { display: block }
   height: 98%;
 }
 html[dark_mode='true'] #header-logo{
+  filter: invert(90%);
+}
+html[dark_mode='true system'] #header-logo{
   filter: invert(90%);
 }
 #header-text {
