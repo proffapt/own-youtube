@@ -59,7 +59,7 @@ html[dark_mode^='true'] #donate_button .footer-path  {
   color: white;
   
 }
-html[dark_mode='true'] #manage_history_container{
+html[dark_mode^='true'] #manage_history_container{
   color: white;
   background-color: rgb(240,55,55,0.9);
 

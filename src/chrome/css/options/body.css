@@ -47,12 +47,19 @@
   box-sizing: border-box;
   border: none;
   border-top-left-radius: 3px;
-  border-top: 1px solid var(--border-color);
-  border-left: 1px solid var(--border-color);
+
   overflow: visible;
 }
-
-
+.field[open]{
+  border-top: 1px solid var(--border-color); 
+   border-left: 1px solid var(--border-color);
+}
+.field[close]>summary{
+color: var(--body-color);
+}
+.field[open]>summary{
+  color: var(--hover-fieldset-legend-color);
+}
 summary {
   font-weight: bold;
   color: var(--hover-fieldset-legend-color);

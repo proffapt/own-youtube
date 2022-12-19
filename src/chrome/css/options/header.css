@@ -13,7 +13,7 @@ html[dark_mode^='false'][global_enable="true"] #header-toggle-outer-path
 {
    fill:#3561D3 
   }
-html[dark_mode='true'][global_enable="true"] #header-toggle-outer-path {
+html[dark_mode^='true'][global_enable="true"] #header-toggle-outer-path {
    fill:#f03737 
   }
 
@@ -45,11 +45,11 @@ html[dark_mode*='system'] #header-system-theme  { display: block }
 #header-logo:hover {
   height: 98%;
 }
-html[dark_mode='true'] #header-logo{
+html[dark_mode^='true'] #header-logo{
   filter: invert(100%);
   
 }
-html[dark_mode='true'] #header-text {
+html[dark_mode^='true'] #header-text {
   color:#f03737;
   font-weight: bolder;
   margin-left: 30px;

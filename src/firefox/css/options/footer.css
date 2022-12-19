@@ -13,7 +13,7 @@ html[dark_mode^='true'] #donate_button .footer-path  {
   text-align: center;
   height: 25px;
   margin-top: 4px;
-  border: 1px groove gray;
+
 
   display: flex;
   align-items: center;
@@ -55,11 +55,19 @@ html[dark_mode^='true'] #donate_button .footer-path  {
 
 #manage_history{
   text-decoration: none;
+  font-weight: bolder;
+  color: white;
+  
 }
-#manage_history_container{
-  border-bottom-width: 2px;
-  border-top-width: 1px;
-  border-left-width: 1px;
-  border-right-width: 2px;
-  border-radius: 2px;
+html[dark_mode^='true'] #manage_history_container{
+  color: white;
+  background-color: rgb(240,55,55,0.9);
+
+  border-radius: 3px;
+}
+html[dark_mode^='false'] #manage_history_container{
+  color: white;
+  background-color: #3561D3;
+
+  border-radius: 3px;
 }

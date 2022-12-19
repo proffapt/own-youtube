@@ -1,17 +1,27 @@
-html[dark_mode^='true'] {
-  --body-color: #c9c9c9;
-  --body-background-color: #393939;
-  --hover-fieldset-legend-color: #eeeeee;
-  --checkbox-color: #208fe4;
-  --border-color: #b9b9b9;
+
+*{
+  
+  font-size:14px;
+  margin: 0;
+  padding:0;
 }
 
+html[dark_mode^='true'] {
+  --body-color: #d2d2d2;
+  --body-background-color: #1f1f1f;
+  --hover-fieldset-legend-color: #eeeeee;
+  --checkbox-color: #f03737;
+  --border-color: #b9b9b9;
+  
+}
+
+
 html[dark_mode^='false'] {
-  --body-color: #393939;
-  --body-background-color: #efefef;
-  --hover-fieldset-legend-color: #000000;
-  --checkbox-color: #208fe4;
-  --border-color: #909090;
+  --body-color: #3561d3;
+  --body-background-color:#fff;
+  --hover-fieldset-legend-color: #1f1f1f;
+  --checkbox-color:#3062e3;
+  --border-color: #3062e3;
 }
 
 html[global_enable="true"] #disabled { display: none; }
@@ -45,3 +55,4 @@ body, body * {
   font-size: 14px;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
+
