@@ -173,26 +173,7 @@ input[type="checkbox"] + label{
   
 }
 
-html[dark_mode^='true'] ::-moz-scrollbar {
-  width: 5px;
-}
 
-/* Track */
-html[dark_mode^='true'] ::-moz-scrollbar-track {
-  background: #888;
-  border-radius: 15px; 
-}
- 
-/* Handle */
-html[dark_mode^='true'] ::-moz-scrollbar-thumb {
-  background: #f03737; 
-  border-radius: 15px;
-}
-
-/* Handle on hover */
-html[dark_mode^='true'] ::-moz-scrollbar-thumb:hover {
-  background: #555; 
-}
 html[dark_mode^='true'] input[type='radio']:checked{
   accent-color: #f03737;
   transform:scale(1.2);
@@ -217,26 +198,7 @@ html[dark_mode^='false'] input[type='radio']:checked{
     
   }
   
-  html[dark_mode^='false'] ::-moz-scrollbar {
-    width: 5px;
-  }
-  
-  /* Track */
-  html[dark_mode^='false'] ::-moz-scrollbar-track {
-    background: #dadae6;
-    border-radius: 15px; 
-  }
-   
-  /* Handle */
-  html[dark_mode^='false'] ::-moz-scrollbar-thumb {
-  background: #6677cc; 
-  border-radius: 15px;
-  }
-  
-  /* Handle on hover */
-  html[dark_mode^='false'] ::-moz-scrollbar-thumb:hover {
-    background: #555; 
-  }
+
    .field div input[type='radio']:checked +label{
     transition-duration: 0.2s;
    font-weight: 900;
