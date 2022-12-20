@@ -26,33 +26,18 @@
   transition: box-shadow 0.1s;
 }
 
-#primary_options div {
-  height: 15px;
-}
 
-#primary_options div:not(:last-child) {
-  margin-bottom: 0px;
-}
 
-#primary_options .field {
-  margin-bottom: 10px;
-}
-
-#primary_options .field:not(:last-child) {
-  margin-bottom: 20px;
-}
-
-.field {
-  padding-left: 12px;
+.field ,.inside{
+  position: relative;
   box-sizing: border-box;
   border: none;
-  border-top-left-radius: 3px;
+  
 
   overflow: visible;
 }
-.field[open]{
-  border-top: 1px solid var(--border-color); 
-   border-left: 1px solid var(--border-color);
+html[dark_mode^='true'] .field[open] {
+  border-left:2px solid #ef7c7c ;
 }
 .field[close]>summary{
 color: var(--body-color);
@@ -63,8 +48,7 @@ color: var(--body-color);
 summary {
   font-weight: bold;
   color: var(--hover-fieldset-legend-color);
-  position: relative;
-  top: -10px;
+  
   width: fit-content;
   background-color: var(--body-background-color);
 }
@@ -72,7 +56,9 @@ summary {
 label {
   position: relative;
 }
-
+.inside{
+  width:100%;
+}
 .tooltip {
   position: absolute;
   height: 95%;
@@ -118,26 +104,28 @@ input[type="checkbox"]{
   cursor: pointer;
   margin: 0;
   border: 1px solid var(--body-color);
-  width: 12px;
-  height: 12px;
+  width: 14px;
+  height: 14px;
   border-radius: 3px;
-  transform: translateY(-0.5px);
-  display: grid;
   place-content: center;
+  position:absolute;
+  right:31px;
 }
 
-input[type="checkbox"]:not(:checked)+label:after{
+input[type="checkbox"]:not(:checked):after{
   content: '✔';
   position: absolute;
-  top: 4px;
-  left: -14px;
+  
+  
   font-size: 10px;
   line-height: 0.8;
   color: #fff;
   transition: all .2s;
 }
 input[type="checkbox"]::before {
+  position: absolute;
   content: "";
+
   width: 12px;
   height: 12px;
   transform: scale(1);
@@ -155,9 +143,8 @@ input[type="checkbox"]+input[type="checkbox"]{
 }
 
 input[type="checkbox"] + label{
-  position: relative;
-  top: -14px;
-  left: 16px;
+  padding-left:20px;
+  font-weight: 600;
 }
 /* dark theme */
   html[dark_mode^='true']  details div:nth-child(even){
@@ -168,8 +155,11 @@ input[type="checkbox"] + label{
   background-color: #242424;
 }
  html[dark_mode^='true'] details div{
-  padding:7px 0px;
+  width:100%;
+  height:fit-content;
+  padding:10px 0px;
   margin:0px;
+  position: relative;
   
 }
 
@@ -178,28 +168,150 @@ html[dark_mode^='true'] input[type='radio']:checked{
   accent-color: #f03737;
   transform:scale(1.2);
 }
+html[dark_mode^='true'] .field .initial{
+  padding:20px 10px;
+  list-style-type:none;
+  cursor:pointer;
+  width:100%;
+  background-color: #1c1b1b;
+}
+html[dark_mode^='true'] .inside .final{
+  padding:20px 20px;
+  list-style-type:none;
+  cursor:pointer;
+  width:100%;
+}
+html[dark_mode^='true'] .inside .final div{
+  padding:20px 20px;
+}
 
+html[dark_mode^='true'] .field{
+    
+  border-bottom: 2px solid rgb(195, 145, 145,0.2);
+}
+html[dark_mode^='true']  .field:first-of-type summary{
+  border-top: 2px solid rgb(195, 145, 145,0.2);
+    }
+    html[dark_mode^='true'] .field[open] .initial{
+      background-color:#555;
+    }
+html[dark_mode^='true'] .field[close] .initial:after{
+  content: '▼';
+  position: absolute;
+  right: 30px;
+ color: #ef7c7c;
+
+  transform: scale(0.8);
+  transition: 120ms transform ease-in-out;
+}
+html[dark_mode^='true'] .inside[open] .final{
+  background-color: #555;
+  
+}
+html[dark_mode^='true']  .inside[close] .final:after{
+  content: '▼';
+  position: absolute;
+  right: 30px;
+ color: #ef7c7c;
+  transform: scale(0.8);
+  transition: 0.25s transform ease;
+}
+html[dark_mode^='true'] .field[open] .initial:after{
+  
+  transform: rotate(-180deg) scale(0.8);
+  transition: 0.25s transform ease;
+}
+html[dark_mode^='true'] .field .inside[open] .final:after{
+  transform: rotate(-180deg) scale(0.8);
+  transition: 0.25s transform ease;
+}
+html[dark_mode^='true'] .field summary:hover{
+ background-color: #555;
+ transition-duration: 0.2s;
+}
+html[dark_mode^='true'] input[type='radio']:checked+label{
+font-weight: bold;
+  
+}
 /* light theme */
+html[dark_mode^='false'] input[type='radio']:checked+label{
+  font-weight: bold;
+  
+}
 html[dark_mode^='false'] input[type='radio']:checked{
   accent-color: #6677cc;
   transform:scale(1.2);
+  
 }
-  html[dark_mode^='false'] details div:nth-child(even){
-    background-color:#e3eaed;
+html[dark_mode^="false"] .field[open]{
+  border-left:2px solid rgb(21, 55, 226);
+}
+  html[dark_mode^='false'] details div:nth-child(odd){
+    background-color:rgba(122, 142, 244, 0.15);
     color:white;
   margin-bottom: 0px;
   }
-   html[dark_mode^='false'] details div:nth-child(odd){
+   html[dark_mode^='false'] details div:nth-child(even){
     margin-bottom: 0px;
   }
    html[dark_mode^='false'] details div{
-    padding:7px 0px;
+    width:100%;
+    height:fit-content;
+    padding:10px 0px;
     margin:0px;
     
   }
   
 
-   .field div input[type='radio']:checked +label{
-    transition-duration: 0.2s;
-   font-weight: 900;
+  
+  html[dark_mode^='false'] details summary{
+    padding:20px 10px;
+    list-style-type: none;
+    cursor:pointer;
+    width:100%;
   }
+  
+  html[dark_mode^='false'] .field{
+      
+    border-bottom: 2px solid rgb(175, 180, 205,0.5);
+  }
+  html[dark_mode^='false']  .field:first-of-type summary{
+    border-top: 2px solid rgb(175, 180, 205,0.5);
+      }
+  html[dark_mode^='false'] .field[close] .initial:after{
+    content: '▼';
+    position: absolute;
+    right: 30px;
+   color: #9099cd;
+    transform: scale(0.8);
+  }
+  
+  html[dark_mode^='false']  .inside[close] .final:after{
+    content: '▼';
+    position: absolute;
+    right: 30px;
+   color: #9099cd;
+    transform: scale(0.8);
+  }
+  html[dark_mode^='false'] .field[open] .initial:after{
+    transform: rotate(-180deg) scale(0.8);
+    transition: 0.25s transform ease;
+  }
+  html[dark_mode^='false'] .field .inside[open] .final:after{
+    transform: rotate(-180deg) scale(0.8);
+    transition: 0.25s transform ease;
+  }
+  html[dark_mode^='false'] .field summary:hover{
+   background-color: rgb(175, 180, 205,0.5);
+   transition-duration: 0.2s;
+  }
+  html[dark_mode^='false'] .field[open] .initial{
+    background-color:rgb(175, 180, 205,0.5);
+    
+  }
+  html[dark_mode^='false'] .inside[open] .final{
+    background-color:rgb(175, 180, 205,0.5);
+    
+  }
+
+  

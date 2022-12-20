@@ -66,7 +66,7 @@
 
     <div id="primary_options">
       <details close class="field">
-        <summary>Basic</summary>
+        <summary class="initial">Basic</summary>
 
         <div>
             <input type="checkbox" id="remove_homepage" class="remove_homepage"
@@ -92,8 +92,9 @@
             </label>
         </div>
 		
-		<hr style="margin-top: 15px">
-        <div><b>Top bar elements</b></div>
+		
+        <details close class="inside">
+          <summary class="final">Top bar elements</summary>
         <div>
           <input type="checkbox" id="remove_top_bar" class="remove_top_bar"
                  value="remove_top_bar" checked />
@@ -125,11 +126,11 @@
               Avatar
             </label>
         </div>
-
+        </details>
       </details>
 
       <details close class="field">
-        <summary>Homepage</summary>
+        <summary class="initial">Homepage</summary>
         
         <div>
             <input type="checkbox" id="remove_all_but_one" class="remove_all_but_one"
@@ -159,7 +160,7 @@
       </details>
 
       <details close class="field">
-        <summary>Left Navigation Bar</summary>
+        <summary class="initial">Left Navigation Bar</summary>
 
         <div>
             <input type="checkbox" id="remove_leftbar" class="remove_leftbar"
@@ -276,8 +277,8 @@
       </div>
 		<br>
 		
-		<details close class="field">
-			<summary>More From Youtube</summary>
+		<details close class="inside">
+			<summary class="final">More From Youtube</summary>
 
         <div>
 			<input type="checkbox" id="remove_premium_link" class="remove_premium_link"
@@ -384,9 +385,10 @@
 	</details>
 	
 	<details close class="field">
-		<summary>Video Player</summary>
+		<summary class="initial">Video Player</summary>
 		
-        <div style="margin-top: 5px"><b>Dynamic options</b></div>
+        <details close class="inside">
+          <summary class="final">Dynamic options</summary>
         <div>
 			<input type="checkbox" id="auto_skip_ads" class="auto_skip_ads"
 			value="auto_skip_ads" unchecked />
@@ -429,11 +431,13 @@
           <label for="remove_videoComments">
             Video Comments
           </label>
-        </div>
+        </div></details>
 
 
-        <hr style="margin-top: 15px">
-        <div><b>Remove element options</b></div>
+     
+        <details close class="inside">
+          <summary class="final">Remove element options</summary> 
+
         <div>
             <input type="checkbox" id="remove_info_cards" class="remove_info_cards"
                    value="remove_info_cards" unchecked />
@@ -484,11 +488,11 @@
               More videos (embedded player)
               <img class="tooltip" src="images/tooltip.svg" title="Panel that appears in embedded videos when paused.">
             </label>
-        </div>
+        </div></details>
       </details>
 
       <details close class="field">
-        <summary>Search Results Page</summary>
+        <summary class="initial">Search Results Page</summary>
 
         <div>
             <input type="checkbox" id="remove_extra_results" class="remove_extra_results"
@@ -519,7 +523,7 @@
       </details>
 
       <details close class="field">
-        <summary>Redirect the HomePage<a class="redirect_link" href="https://www.youtube.com/" target="_blank">↗️</a></summary>
+        <summary class="initial">Redirect the HomePage<a class="redirect_link" href="https://www.youtube.com/" target="_blank">↗️</a></summary>
 
         <div>
             <input type="radio" id="redirect_to_subs" class="redirect_to_subs" name="redirect"
