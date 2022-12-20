@@ -104,8 +104,8 @@ input[type="checkbox"]{
   cursor: pointer;
   margin: 0;
   border: 1px solid var(--body-color);
-  width: 14px;
-  height: 14px;
+  width: 15px;
+  height: 15px;
   border-radius: 3px;
   place-content: center;
   position:absolute;
@@ -115,8 +115,8 @@ input[type="checkbox"]{
 input[type="checkbox"]:not(:checked):after{
   content: '✔';
   position: absolute;
-  
-  
+  left:2.5px;
+  top:3px;
   font-size: 10px;
   line-height: 0.8;
   color: #fff;
@@ -125,9 +125,10 @@ input[type="checkbox"]:not(:checked):after{
 input[type="checkbox"]::before {
   position: absolute;
   content: "";
-
-  width: 12px;
-  height: 12px;
+top:-1px;
+left: -1px;
+  width: 15px;
+  height: 15px;
   transform: scale(1);
   transition: 120ms transform ease-in-out;
   border-radius: 3px;
@@ -154,12 +155,17 @@ input[type="checkbox"] + label{
   
   background-color: #242424;
 }
- html[dark_mode^='true'] details div{
+
+
+
+ html[dark_mode^='true'] details  div{
+  
   width:100%;
   height:fit-content;
   padding:10px 0px;
   margin:0px;
   position: relative;
+  
   
 }
 
@@ -220,8 +226,9 @@ html[dark_mode^='true'] .field[close] .initial:after{
   right: 30px;
  color: #ef7c7c;
 
-  transform: scale(0.8);
-  transition: 120ms transform ease-in-out;
+  transform: scale(0.9);
+  transition: all 0.25s ease-in-out;
+ 
 }
 html[dark_mode^='true'] .inside[open] .final{
   background-color: #555;
@@ -232,17 +239,20 @@ html[dark_mode^='true']  .inside[close] .final:after{
   position: absolute;
   right: 30px;
  color: #ef7c7c;
-  transform: scale(0.8);
-  transition: 0.25s transform ease;
+  transform: scale(0.9);
+  transition: all 0.25s ease;
+  
 }
 html[dark_mode^='true'] .field[open] .initial:after{
   
-  transform: rotate(-180deg) scale(0.8);
-  transition: 0.25s transform ease;
+  transform: rotate(-180deg) scale(0.9);
+  transition: all 0.25s ease;
+  
 }
 html[dark_mode^='true'] .field .inside[open] .final:after{
-  transform: rotate(-180deg) scale(0.8);
+  transform: rotate(-180deg) scale(0.9);
   transition: 0.25s transform ease;
+
 }
 html[dark_mode^='true'] .field summary:hover{
  background-color: #555;
@@ -320,7 +330,7 @@ html[dark_mode^="false"] .field[open]{
     position: absolute;
     right: 30px;
    color: #9099cd;
-    transform: scale(0.8);
+    transform: scale(0.9);
   }
   
   html[dark_mode^='false']  .inside[close] .final:after{
@@ -328,14 +338,14 @@ html[dark_mode^="false"] .field[open]{
     position: absolute;
     right: 30px;
    color: #9099cd;
-    transform: scale(0.8);
+    transform: scale(0.9);
   }
   html[dark_mode^='false'] .field[open] .initial:after{
-    transform: rotate(-180deg) scale(0.8);
+    transform: rotate(-180deg) scale(0.9);
     transition: 0.25s transform ease;
   }
   html[dark_mode^='false'] .field .inside[open] .final:after{
-    transform: rotate(-180deg) scale(0.8);
+    transform: rotate(-180deg) scale(0.9);
     transition: 0.25s transform ease;
   }
   html[dark_mode^='false'] .field summary:hover{
