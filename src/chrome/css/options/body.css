@@ -382,4 +382,24 @@ input[type="checkbox"] {
   html[dark_mode^='true'] input[type="checkbox"]:before {
     background: rgba(196, 195, 195, 0.55);
   }
+  .radio div{
+    display: flex;
+  }
   
+.radio div input{
+  margin:0px 15px 0px 40px;
+  height:15px;
+  width:15px;
+
+transform: scale(0.7);
+}
+
+.radio div input:checked{
+  height:15px;
+  width:15px;
+  transform: rotate(360deg) scale(1.5);
+  transition-duration: 0.5s;
+}
+.radio div input+label{
+  font-weight: 600;
+}
