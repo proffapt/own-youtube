@@ -1,6 +1,6 @@
 
 :root {
-  --body-height: 400px;
+  --body-height:355px;
 }
 
 #disabled {
@@ -14,7 +14,7 @@
 }
 
 #primary_options {
-  height: var(--body-height);
+  height:var(--body-height);
   overflow: scroll;
   overflow-x: hidden;
   padding: 1px;
@@ -99,49 +99,7 @@ label {
   text-align: right;
 }
 
-input[type="checkbox"]{
-  appearance: none;
-  cursor: pointer;
-  margin: 0;
-  border: 1px solid var(--body-color);
-  width: 15px;
-  height: 15px;
-  border-radius: 3px;
-  place-content: center;
-  position:absolute;
-  right:31px;
-}
 
-input[type="checkbox"]:not(:checked):after{
-  content: '✔';
-  position: absolute;
-  left:2.5px;
-  top:3px;
-  font-size: 10px;
-  line-height: 0.8;
-  color: #fff;
-  transition: all .2s;
-}
-input[type="checkbox"]::before {
-  position: absolute;
-  content: "";
-top:-1px;
-left: -1px;
-  width: 15px;
-  height: 15px;
-  transform: scale(1);
-  transition: 120ms transform ease-in-out;
-  border-radius: 3px;
-  background-color: var(--checkbox-color);
-}
-
-input[type="checkbox"]:checked::before {
-  transform: scale(0);
-}
-
-input[type="checkbox"]+input[type="checkbox"]{
-  margin-top: 0;
-}
 
 input[type="checkbox"] + label{
   padding-left:20px;
@@ -168,6 +126,7 @@ input[type="checkbox"] + label{
   
   
 }
+
 
 
 html[dark_mode^='true'] input[type='radio']:checked{
@@ -272,6 +231,7 @@ html[dark_mode^="false"] .field[open]{
     
   }
   
+  
  
   html[dark_mode^='false'] details summary{
     padding:20px 10px;
@@ -323,4 +283,67 @@ html[dark_mode^="false"] .field[open]{
     
   }
 
+
+
+
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    margin: 10px;
+    left:280px;
+  }
+  
+  
+  /* To create surface of toggle button */
+  input[type="checkbox"]:before {
+    content: '';
+    position:absolute;
+    width: 30px;
+    height: 18px;
+    display: inline-block;
+    
+    top:-3px;
+    
+    border-radius: 18px;
+    clear: both;
+  }
+  
+  
+  /* Contents before checkbox to create toggle  */
+  input[type="checkbox"]:after {
+    content: '';
+    width:12px;
+    height:12px;
+    display: block;
+    position: absolute;
+    left:3px;
+   border-radius: 50%;
+    background: rgb(255, 255, 255);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+  }
+  input[type="checkbox"]:before,input[type="checkbox"]:after{
+    transform: scale(0.9);
+  }
+  /* Shift the handle to left on check event */
+  input[type="checkbox"]:checked:after {
+    left:14px;
+    box-shadow: -1px 1px 3px rgba(0, 0, 0, 0.6);
+  }
+  /* Background color when toggle button will be active */
+  html[dark_mode^='false'] input[type="checkbox"]:checked:before {
+    background: #3062e3;
+  }
+  html[dark_mode^='true'] input[type="checkbox"]:checked:before {
+    background: #f03737;
+  }
+  html[dark_mode^='false'] input[type="checkbox"]:before {
+    background:rgb(152, 152, 152);
+  }
+  html[dark_mode^='true'] input[type="checkbox"]:before {
+    background: rgba(196, 195, 195, 0.55);
+  }
   
