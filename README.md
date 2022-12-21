@@ -116,28 +116,44 @@ _To get a local copy up and running follow these simple steps._
 
 ## Features
 
-### Basic
+
+<details>
+<summary>
+Basic
+</summary>
 
 - **Home Page** : Hide the entire Home Page
 - **Side Bar** : Hide the Side Bar (when watching a video)
 - **End of Video** : Hide the video reccomendations that appear at the end of a video
 <div id="topbar"></div><p align="right">(<a href="#top">back to top</a>)</p>
 
-### Top Bar Elements
+</details>
+<details>
+<summary>
+ Top Bar Elements
+</summary>
 
 - **Youtube Apps and Create**
 - **Notifications**
 - **Avatar** : Hide your user profile logo (links to settings)
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-### Homepage
+</details>
+<details>
+<summary>
+ Homepage
+</summary>
 
 - **All but First row** : Hides all the video thumbnaikls except the topmost row
 - **Infinite Scroll** : Limits your number of video reccomendations on the Home Page
 - **Extra Rows** : Hides extras like shorts, trending, etc.
 <div id="leftbar"></div><p align="right">(<a href="#top">back to top</a>)</p>
 
-### Left Navigation Bar
+</details>
+<details>
+<summary>
+ Left Navigation Bar
+</summary>
 
 - **Complete Bar** : Completely removes the left navigation bar
 - **Logo link** : Makes the logo not clickable (to link to the homepage)
@@ -153,7 +169,11 @@ _To get a local copy up and running follow these simple steps._
 - **Subscriptions Pane** : The actual list of subscribed channels
 <div id="moreyt"></div><p align="right">(<a href="#top">back to top</a>)</p>
 
-### More from Youtube
+</details>
+<details>
+<summary>
+ More from Youtube
+</summary>
 
 - **Premium**
 - **Films**
@@ -169,7 +189,11 @@ _To get a local copy up and running follow these simple steps._
 - **Footer Pane**
 <div id="videoply"></div><p align="right">(<a href="#top">back to top</a>)</p>
 
-### Video Player
+</details>
+<details>
+<summary>
+ Video Player
+</summary>
 
 - **Remove Ads** : Play Ads at 5x and auto-skip
 - **Center Content** : Remove the left and right panes, and center the video player
@@ -177,7 +201,11 @@ _To get a local copy up and running follow these simple steps._
 - **Redirect Shorts** : Play shorts in the normal video player
 <div id="remelem"></div><p align="right">(<a href="#top">back to top</a>)</p>
 
-### Remove Element Options
+</details>
+<details>
+<summary>
+ Remove Element Options
+</summary>
 
 - **In-video info cards**
 - **Play-next button**
@@ -187,17 +215,28 @@ _To get a local copy up and running follow these simple steps._
 - **More videos (embedded player)** : Remove the video reccommendations that appear when paused
 <div id="searchres"></div><p align="right">(<a href="#top">back to top</a>)</p>
 
-### Search Results page
+</details>
+<details>
+<summary>
+ Search Results page
+</summary>
 
 - **Extra results** : Remove extra 'For You' 'Also Watch' results
 - **Shorts results**
 - **Thumbnail slideshow** : Don't play the preview of video upon hovering on thumbnail
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-### Redirect the HomePage
+</details>
+<details>
+<summary>
+ Redirect the HomePage
+</summary>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Redirect where clicking the Youtube Logo takes you
 <p align="right">(<a href="#top">back to top</a>)</p>
+</details>
+
+<br>
 
 ## The extension in action
 <br>
