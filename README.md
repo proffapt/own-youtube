@@ -47,6 +47,10 @@
       <a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#installation">Installation</a></li>
+			<ul>
+				<li><a href="#chrome">Chrome</a></li>
+				<li><a href="#firefox">Firefox</a></li>
+			</ul>
       </ul>
     </li>
     <li><a href="#features">Features</a>
@@ -80,8 +84,8 @@ Have you ever sat down to watch that one important video on Youtube, and got up 
 
 ### Supports:
 
-1. Browser
-	* Chrome
+* [Chrome](https://www.google.com/chrome/index.html) and other [Chrmoium](https://www.chromium.org/getting-involved/download-chromium/) based browsers
+* [Firefox](https://www.mozilla.org/en-US/firefox/new/) and its derivatives
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -103,14 +107,25 @@ This project is made with following langs/frameworks.
 _To get a local copy up and running follow these simple steps._
 
 1. Clone the repository with `git clone https://github.com/proffapt/own-youtube`.
+2. Now depending upon your browser of choice, follow the steps in respective sections:
 
-2. Type `chrome://extensions` on search bar
+	- [Chrome](#chrome)
+	- [Firefox](#firefox)
 
-3. Toggle the **DEVELOPER MODE** on top right corner
+	#### Chrome
 
-4. Click **LOAD UNPACKED** option and select the `src/chrome` folder from the cloned repository.
+	1. Type `chrome://extensions` on search bar
+	2. Toggle the **DEVELOPER MODE** on top right corner
+	3. Click **LOAD UNPACKED** option and select the `src/chrome` folder from the cloned repository.
+  5. Refresh Youtube if the extension doesn't function
+  
+  #### Firefox
+	
+	1. Type `about:debugging#/runtime/this-firefox` on search bar
+	2. Click on the `Load Temporary Add-on...` button under **Load Temporary Extensions** Section
+	3. Navigate to `src/firefox` folder in your opened file navigator
+	4. Select the `manifest.json` file inside it and press **open**
 
-5. Refresh Youtube if the extension doesn't function
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -224,6 +239,7 @@ Basic
 - **Extra results** : Remove extra 'For You' 'Also Watch' results
 - **Shorts results**
 - **Thumbnail slideshow** : Don't play the preview of video upon hovering on thumbnail
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 </details>
@@ -246,6 +262,12 @@ Basic
 <img src="images/centered-video-player1.png" alt="Centered video player" width="800"></img>
 </div>
 <p align="right">(<a href="#top">back to top</a>)</p>
+
+### Video Demo:
+
+https://user-images.githubusercontent.com/94317530/208228824-dcd32280-146c-41f2-affd-6b576f2b1b04.mp4
+
+
 
 <!-- CONTACT -->
 ## Contact
