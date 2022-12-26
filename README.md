@@ -140,7 +140,7 @@ Basic
 - **Home Page** : Hide the entire Home Page
 - **Side Bar** : Hide the Side Bar (when watching a video)
 - **End of Video** : Hide the video reccomendations that appear at the end of a video
-<div id="topbar"></div><p align="right">(<a href="#top">back to top</a>)</p>
+<div id="topbar"></div><p align="right">(<a href="#Features">back to Features</a>)</p>
 
 </details>
 <details>
@@ -151,7 +151,7 @@ Basic
 - **Youtube Apps and Create**
 - **Notifications**
 - **Avatar** : Hide your user profile logo (links to settings)
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#Features">back to Features</a>)</p>
 
 </details>
 <details>
@@ -159,10 +159,10 @@ Basic
  Homepage
 </summary>
 
-- **All but First row** : Hides all the video thumbnaikls except the topmost row
+- **All but First row** : Hides all the video thumbnaikls except the Featuresmost row
 - **Infinite Scroll** : Limits your number of video reccomendations on the Home Page
 - **Extra Rows** : Hides extras like shorts, trending, etc.
-<div id="leftbar"></div><p align="right">(<a href="#top">back to top</a>)</p>
+<div id="leftbar"></div><p align="right">(<a href="#Features">back to Features</a>)</p>
 
 </details>
 <details>
@@ -182,7 +182,7 @@ Basic
 - **Watch Later**
 - **Liked Videos**
 - **Subscriptions Pane** : The actual list of subscribed channels
-<div id="moreyt"></div><p align="right">(<a href="#top">back to top</a>)</p>
+<div id="moreyt"></div><p align="right">(<a href="#Features">back to Features</a>)</p>
 
 </details>
 <details>
@@ -202,7 +202,7 @@ Basic
 - **YouTube Music**
 - **YouTube Kids**
 - **Footer Pane**
-<div id="videoply"></div><p align="right">(<a href="#top">back to top</a>)</p>
+<div id="videoply"></div><p align="right">(<a href="#Features">back to Features</a>)</p>
 
 </details>
 <details>
@@ -212,9 +212,9 @@ Basic
 
 - **Remove Ads** : Play Ads at 5x and auto-skip
 - **Center Content** : Remove the left and right panes, and center the video player
-- **Disable Autoplay**
+- **Disable AuFeatureslay**
 - **Redirect Shorts** : Play shorts in the normal video player
-<div id="remelem"></div><p align="right">(<a href="#top">back to top</a>)</p>
+<div id="remelem"></div><p align="right">(<a href="#Features">back to Features</a>)</p>
 
 </details>
 <details>
@@ -228,7 +228,7 @@ Basic
 - **Comments**
 - **ChatLive-Streaming** : Remove the Live Stream chat
 - **More videos (embedded player)** : Remove the video reccommendations that appear when paused
-<div id="searchres"></div><p align="right">(<a href="#top">back to top</a>)</p>
+<div id="searchres"></div><p align="right">(<a href="#Features">back to Features</a>)</p>
 
 </details>
 <details>
@@ -240,7 +240,7 @@ Basic
 - **Shorts results**
 - **Thumbnail slideshow** : Don't play the preview of video upon hovering on thumbnail
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#Features">back to Features</a>)</p>
 
 </details>
 <details>
@@ -249,10 +249,12 @@ Basic
 </summary>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Redirect where clicking the Youtube Logo takes you
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#Features">back to Features</a>)</p>
 </details>
 
 <br>
+
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 ## The extension in action
 <br>
