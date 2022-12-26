@@ -260,8 +260,11 @@ Basic
 <br>
 
 <div align="center" id="screenshots">
-<img src="images/homepage.png" alt="Distraction free homepage" width="800"></img>
-<img src="images/centered-video-player1.png" alt="Centered video player" width="800"></img>
+<img src="images/homepage.png" alt="Distraction free homepage" width="700"></img>
+</div>
+<br>
+<div align="center">
+<img src="images/centered-video-player1.png" alt="Centered video player" width="700"></img>
 </div>
 <p align="right">(<a href="#top">back to top</a>)</p>
 
