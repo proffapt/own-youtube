@@ -263,10 +263,6 @@ Basic
 </div>
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-### Video Demo:
-
-https://user-images.githubusercontent.com/94317530/208228824-dcd32280-146c-41f2-affd-6b576f2b1b04.mp4
-
 
 
 <!-- CONTACT -->
