@@ -117,9 +117,8 @@ _To get a local copy up and running follow these simple steps._
 	1. Type `chrome://extensions` on search bar
 	2. Toggle the **DEVELOPER MODE** on top right corner
 	3. Click **LOAD UNPACKED** option and select the `src/chrome` folder from the cloned repository.
-  5. Refresh Youtube if the extension doesn't function
-  
-  #### Firefox
+
+	#### Firefox
 	
 	1. Type `about:debugging#/runtime/this-firefox` on search bar
 	2. Click on the `Load Temporary Add-on...` button under **Load Temporary Extensions** Section
