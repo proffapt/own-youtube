@@ -53,6 +53,19 @@
 			</ul>
       </ul>
     </li>
+    <li><a href="#features">Features</a>
+      <ul>
+        <li><a href="#basic">Basic</a></li>
+        <li><a href="#topbar">Top Bar Elements</a></li>
+        <li><a href="#homepage">Homepage</a></li>
+        <li><a href="#leftbar">Left Navigation Bar</a></li>
+        <li><a href="#moreyt">More from Youtube</a></li>
+        <li><a href="#videoply">Video Player</a></li>
+        <li><a href="#remelem">Remove Element Options</a></li>
+        <li><a href="#searchres">Search Results</a></li>
+      </ul>
+    </li>
+    <li><a href="#screenshots">Extension in Action</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
     <li><a href="#miscelleneous">Miscelleneous</a></li>    
@@ -62,13 +75,8 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-<div align="center">
-  <a href="https://github.com/proffapt/own-youtube">
-    <img src="images/screenshot.png" alt="product screenshot" width="250" height="350">
-  </a>
-</div>
 
-YouTube these days has become as one of the main source of distractions, leading us to waste time on binge watching shit. This extension will remove every element you ever wanted, to completely remove distraction leading elements.
+Have you ever sat down to watch that one important video on Youtube, and got up 3 hours later with no memory what you opened Youtube for? Well, experience that no more with this browser extension, that lets you remove any and all sources of distractions on the website.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -116,8 +124,149 @@ _To get a local copy up and running follow these simple steps._
 	2. Click on the `Load Temporary Add-on...` button under **Load Temporary Extensions** Section
 	3. Navigate to `src/firefox` folder in your opened file navigator
 	4. Select the `manifest.json` file inside it and press **open**
-	
+
+
 <p align="right">(<a href="#top">back to top</a>)</p>
+
+## Features
+
+
+<details>
+<summary>
+Basic
+</summary>
+
+- **Home Page** : Hide the entire Home Page
+- **Side Bar** : Hide the Side Bar (when watching a video)
+- **End of Video** : Hide the video reccomendations that appear at the end of a video
+<div id="topbar"></div><p align="right">(<a href="#Features">back to Features</a>)</p>
+
+</details>
+<details>
+<summary>
+ Top Bar Elements
+</summary>
+
+- **Youtube Apps and Create**
+- **Notifications**
+- **Avatar** : Hide your user profile logo (links to settings)
+<p align="right">(<a href="#Features">back to Features</a>)</p>
+
+</details>
+<details>
+<summary>
+ Homepage
+</summary>
+
+- **All but First row** : Hides all the video thumbnaikls except the Featuresmost row
+- **Infinite Scroll** : Limits your number of video reccomendations on the Home Page
+- **Extra Rows** : Hides extras like shorts, trending, etc.
+<div id="leftbar"></div><p align="right">(<a href="#Features">back to Features</a>)</p>
+
+</details>
+<details>
+<summary>
+ Left Navigation Bar
+</summary>
+
+- **Complete Bar** : Completely removes the left navigation bar
+- **Logo link** : Makes the logo not clickable (to link to the homepage)
+- **Home**
+- **Explore**
+- **Shorts**
+- **Subscriptions**
+- **Library**
+- **History**
+- **Your Videos**
+- **Watch Later**
+- **Liked Videos**
+- **Subscriptions Pane** : The actual list of subscribed channels
+<div id="moreyt"></div><p align="right">(<a href="#Features">back to Features</a>)</p>
+
+</details>
+<details>
+<summary>
+ More from Youtube
+</summary>
+
+- **Premium**
+- **Films**
+- **Trending**
+- **Gaming**
+- **Live**
+- **Fashion**
+- **Learning**
+- **Sports**
+- **Creator Studio**
+- **YouTube Music**
+- **YouTube Kids**
+- **Footer Pane**
+<div id="videoply"></div><p align="right">(<a href="#Features">back to Features</a>)</p>
+
+</details>
+<details>
+<summary>
+ Video Player
+</summary>
+
+- **Remove Ads** : Play Ads at 5x and auto-skip
+- **Center Content** : Remove the left and right panes, and center the video player
+- **Disable AuFeatureslay**
+- **Redirect Shorts** : Play shorts in the normal video player
+<div id="remelem"></div><p align="right">(<a href="#Features">back to Features</a>)</p>
+
+</details>
+<details>
+<summary>
+ Remove Element Options
+</summary>
+
+- **In-video info cards**
+- **Play-next button**
+- **Menu buttons** : Remove the Like, Dislike, Share, etc
+- **Comments**
+- **ChatLive-Streaming** : Remove the Live Stream chat
+- **More videos (embedded player)** : Remove the video reccommendations that appear when paused
+<div id="searchres"></div><p align="right">(<a href="#Features">back to Features</a>)</p>
+
+</details>
+<details>
+<summary>
+ Search Results page
+</summary>
+
+- **Extra results** : Remove extra 'For You' 'Also Watch' results
+- **Shorts results**
+- **Thumbnail slideshow** : Don't play the preview of video upon hovering on thumbnail
+
+<p align="right">(<a href="#Features">back to Features</a>)</p>
+
+</details>
+<details>
+<summary>
+ Redirect the HomePage
+</summary>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Redirect where clicking the Youtube Logo takes you
+<p align="right">(<a href="#Features">back to Features</a>)</p>
+</details>
+
+<br>
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+## The extension in action
+<br>
+
+<div align="center" id="screenshots">
+<img src="images/homepage.png" alt="Distraction free homepage" width="700"></img>
+</div>
+<br>
+<div align="center">
+<img src="images/centered-video-player1.png" alt="Centered video player" width="700"></img>
+</div>
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 
 
 <!-- CONTACT -->
