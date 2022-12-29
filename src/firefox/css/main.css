@@ -60,7 +60,7 @@ html[global_enable="true"][remove_comments="true"] ytd-engagement-panel-section-
 html[global_enable="true"][remove_chat="true"] #chat,
 html[global_enable="true"][remove_info_cards="true"] div#iv-drawer,
 html[global_enable="true"][remove_info_cards="true"] button[class="ytp-button ytp-cards-button"] > span[class="ytp-cards-button-icon-default"] > div.ytp-cards-button-icon,
-html[global_enable="true"][remove_menu_buttons="true"] #menu-container,
+html[global_enable="true"][remove_menu_buttons="true"] #menu,
 html[global_enable="true"][remove_embedded_more_videos="true"] div.ytp-pause-overlay,
 html[global_enable="true"][remove_videoComments="true"] ytd-comments[id="comments"] > ytd-item-section-renderer[id="sections"],
 
