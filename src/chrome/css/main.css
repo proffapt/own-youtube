@@ -62,7 +62,7 @@ html[global_enable="true"][remove_info_cards="true"] div#iv-drawer,
 html[global_enable="true"][remove_info_cards="true"] button[class="ytp-button ytp-cards-button"] > span[class="ytp-cards-button-icon-default"] > div.ytp-cards-button-icon,
 html[global_enable="true"][remove_menu_buttons="true"] #menu,
 html[global_enable="true"][remove_embedded_more_videos="true"] div.ytp-pause-overlay,
-html[global_enable="true"][remove_videoComments="true"] ytd-comments[id="comments"] > ytd-item-section-renderer[id="sections"],
+html[global_enable="true"][remove_videoComments="true"] ytd-comments#comments,
 
 /* Search Results Page */
 html[global_enable="true"][on_results_page="true"][remove_extra_results="true"] ytd-shelf-renderer,
@@ -114,14 +114,8 @@ html[global_enable="true"][remove_leftbar="true"]
 
 /* Centers the contents on the screen after video comments are removed */
 
-html[global_enable="true"][remove_videoComments="true"]
-  div#secondary {
-  margin-top: 240px;
-  margin-left: -62.5%;
-  width: 52.5%;
-}
-
-html[global_enable="true"][remove_videoComments="true"]
-  div#above-the-fold {
-    width: 85%;
+html[global_enable="true"][remove_videoComments="true"] div#columns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
