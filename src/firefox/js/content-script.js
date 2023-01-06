@@ -57,7 +57,6 @@ const SETTINGS_LIST = {
   "remove_info_cards":                 { defaultValue: false, eventType: 'change' },
   "remove_play_next_button":           { defaultValue: false, eventType: 'change' },
   "remove_menu_buttons":               { defaultValue: false, eventType: 'change' },
-  "remove_comments":                   { defaultValue: false, eventType: 'change' },
   "remove_chat":                       { defaultValue: false, eventType: 'change' },
   "remove_embedded_more_videos":       { defaultValue: false, eventType: 'change' },
 
