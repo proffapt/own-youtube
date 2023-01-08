@@ -68,7 +68,7 @@
     <li><a href="#screenshots">Extension in Action</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
-    <li><a href="#miscelleneous">Miscelleneous</a></li>    
+    <li><a href="#miscellaneous">Miscellaneous</a></li>    
   </ol>
 </details>
 
