@@ -48,8 +48,7 @@
       <ul>
         <li><a href="#installation">Installation</a></li>
 			<ul>
-				<li><a href="#
-					ome">Chrome</a></li>
+				<li><a href="#chrome">Chrome</a></li>
 				<li><a href="#firefox">Firefox</a></li>
 			</ul>
       </ul>
