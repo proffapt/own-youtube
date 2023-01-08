@@ -68,7 +68,7 @@
     <li><a href="#screenshots">Extension in Action</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
-    <li><a href="#miscelleneous">Miscelleneous</a></li>    
+    <li><a href="#miscellaneous">Miscellaneous</a></li>    
   </ol>
 </details>
 
@@ -84,7 +84,7 @@ Have you ever sat down to watch that one important video on Youtube, and got up 
 
 ### Supports:
 
-* [Chrome](https://www.google.com/chrome/index.html) and other [Chrmoium](https://www.chromium.org/getting-involved/download-chromium/) based browsers
+* [Chrome](https://www.google.com/chrome/index.html) and other [Chromium](https://www.chromium.org/getting-involved/download-chromium/) based browsers
 * [Firefox](https://www.mozilla.org/en-US/firefox/new/) and its derivatives
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -304,7 +304,7 @@ Basic
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-## Miscelleneous
+## Miscellaneous
 
 Do consider looking at other paradigms of this documentation
   - [Change-logs](/.github/CHANGELOG.md)
