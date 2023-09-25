@@ -4,8 +4,14 @@ html[global_enable="true"] ytd-mealbar-promo-renderer,
 
 /* Main */
 html[global_enable="true"][remove_homepage="true"] ytd-browse[page-subtype="home"],
-html[global_enable="true"][remove_sidebar="true"] #secondary > div.circle,
-html[global_enable="true"][remove_sidebar="true"] #related,
+html[global_enable="true"][remove_sidebar="true"] div#columns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+html[global_enable="true"][remove_sidebar="true"] div#related > ytd-watch-next-secondary-results-renderer > div#items {
+  visibility: hidden;
+}
 html[global_enable="true"][remove_leftbar="true"] tp-yt-app-drawer[id="guide"],
 html[global_enable="true"][remove_leftbar="true"] ytd-mini-guide-renderer,
 html[global_enable="true"][remove_leftbar="true"] yt-icon-button[id="guide-button"],
