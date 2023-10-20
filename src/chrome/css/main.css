@@ -99,21 +99,8 @@ html[global_enable="true"][remove_leftbar="true"]
 }
 
 /* Maintains the proper arrangement of the contents of watch later and playlist section */
-html[global_enable="true"][remove_leftbar="true"]
-  #contents[class="style-scope ytd-playlist-video-list-renderer"] {
+html[global_enable="true"][remove_leftbar="true"] ytd-browse[page-subtype="playlist"]{
   margin-left: 240px;
-}
-
-html[global_enable="true"][remove_leftbar="true"]
-  #sort-filter-menu[class="style-scope ytd-playlist-video-list-renderer"] {
-  margin-left: 240px;
-}
-
-/* Maintains the proper alignment of alertboxes in watch later and playlist section whenever they occur; they do not occur everytime */
-html[global_enable="true"][remove_leftbar="true"]
-  ytd-browse > div#alerts > ytd-alert-with-button-renderer {
-  margin-left: 240px;
-  width: 70%;
 }
 
 /* Centers the contents on the screen after video comments are removed */
