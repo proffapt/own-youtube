@@ -172,7 +172,7 @@ document.addEventListener("DOMContentLoaded", event => {
     if (cache['auto_skip_ads'] === true) {
 
       // Close overlay ads.
-      Array.from(document.querySelectorAll('.ytp-ad-overlay-close-button'))?.forEach(e => e?.click());
+      Array.from(document.querySelectorAll('.ytp-ad-skip-button-modern'))?.forEach(e => e?.click());
 
       // Click on "Skip ad" button
       const skippableAd = document.querySelectorAll('.ytp-ad-skip-button').length;
