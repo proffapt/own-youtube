@@ -170,7 +170,13 @@ document.addEventListener("DOMContentLoaded", event => {
 
     // Skip through ads
     if (cache['auto_skip_ads'] === true) {
-
+      // Click on "yes" button when showing "continue playing"
+      const popup =  Array.from(document.querySelectorAll('.ytd-popup-container'))?.[1]
+      if (popup.style.cssText.split(" ").indexOf("display:") === -1){
+        Array.from(document.querySelectorAll('.yt-spec-button-shape-next--call-to-action'))?.forEach(e =>
+          {if (e.children[0].children[0].textContent === "Oui"){e.click();}})
+      }
+      
       // Close overlay ads.
       Array.from(document.querySelectorAll('.ytp-ad-skip-button-modern'))?.forEach(e => e?.click());
 
