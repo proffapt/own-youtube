@@ -173,7 +173,14 @@ document.addEventListener("DOMContentLoaded", event => {
 
       // Close overlay ads.
       Array.from(document.querySelectorAll('.ytp-ad-overlay-close-button'))?.forEach(e => e?.click());
-
+      
+      // Click on "yes" button when showing "continue playing"
+      const popup =  Array.from(document.querySelectorAll('.ytd-popup-container'))?.[1]
+      if (popup.style.cssText.split(" ").indexOf("display:") === -1){
+        Array.from(document.querySelectorAll('.yt-spec-button-shape-next--call-to-action'))?.forEach(e =>
+          {if (e.children[0].children[0].textContent === "Oui"){e.click();}})
+      }
+      
       // Click on "Skip ad" button
       const skippableAd = document.querySelectorAll('.ytp-ad-skip-button').length;
       if (skippableAd) {
