@@ -52,6 +52,7 @@ const SETTINGS_LIST = {
 
   "normalize_shorts":                  { defaultValue: false, eventType: 'change' },
   "auto_skip_ads":                     { defaultValue: false, eventType: 'change' },
+  "auto_continue":                     { defaultValue: true, eventType: 'click' },
   "remove_entire_sidebar":             { defaultValue: false, eventType: 'change' },
   "disable_autoplay":                  { defaultValue: false, eventType: 'change' },
   "remove_info_cards":                 { defaultValue: false, eventType: 'change' },
@@ -168,9 +169,18 @@ document.addEventListener("DOMContentLoaded", event => {
       document.querySelectorAll('.ytp-autonav-toggle-button[aria-checked=true]')?.[0]?.click();
     }
 
+    // Auto continue
+    if (cache['auto_continue'] === true){
+      // Click on "yes" button when showing "continue playing"
+      const popup =  Array.from(document.querySelectorAll('.ytd-popup-container'))?.[1]
+      if (popup.style.cssText.split(" ").indexOf("display:") === -1){
+        Array.from(document.querySelectorAll('.yt-spec-button-shape-next--call-to-action'))?.forEach(e =>
+          {if (e.children[0].children[0].textContent === "Oui"){e.click();}})
+      }
+    }
+    
     // Skip through ads
-    if (cache['auto_skip_ads'] === true) {
-
+    if (cache['auto_skip_ads'] === true) {      
       // Close overlay ads.
       Array.from(document.querySelectorAll('.ytp-ad-skip-button-modern'))?.forEach(e => e?.click());
 
