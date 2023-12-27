@@ -52,6 +52,7 @@ const SETTINGS_LIST = {
 
   "normalize_shorts":                  { defaultValue: false, eventType: 'click' },
   "auto_skip_ads":                     { defaultValue: false, eventType: 'click' },
+  "auto_continue":                     { defaultValue: true, eventType: 'click' },
   "remove_entire_sidebar":             { defaultValue: false, eventType: 'click' },
   "disable_autoplay":                  { defaultValue: false, eventType: 'click' },
   "remove_info_cards":                 { defaultValue: false, eventType: 'click' },
