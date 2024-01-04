@@ -173,9 +173,11 @@ document.addEventListener("DOMContentLoaded", event => {
     if (cache['auto_continue'] === true){
       // Click on "yes" button when showing "continue playing"
       const popup =  Array.from(document.querySelectorAll('.ytd-popup-container'))?.[1]
-      if (popup.style.cssText.split(" ").indexOf("display:") === -1){
-        Array.from(document.querySelectorAll('.yt-spec-button-shape-next--call-to-action'))?.forEach(e =>
-          {if (e.children[0].children[0].textContent === "Oui"){e.click();}})
+      if (popup !== undefined){
+        if (popup.style.cssText.split(" ").indexOf("display:") === -1){
+          Array.from(document.querySelectorAll('.yt-spec-button-shape-next--call-to-action'))?.forEach(e =>
+            {if (e.children[0].children[0].textContent === "Oui"){e.click();}})
+        }
       }
     }
     
