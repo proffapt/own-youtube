@@ -174,18 +174,19 @@ document.addEventListener("DOMContentLoaded", event => {
     if (cache['auto_continue'] === true){
       // Click on "yes" button when showing "continue playing"
       // Get the correct one
-      if (popup !== undefined){
+      if (popup === undefined){
         Array.from(document.querySelectorAll('.ytd-popup-container'))?.forEach(e => {
           if (e.children[0]!== undefined && e.children[0].className === "style-scope ytd-popup-container"){
             popup = e;
           }
         });
-      }
-      const popup_s = popup.style.cssText
-      if (popup_s.split(" ").indexOf("display:") === -1 || popup_s.split(";").indexOf(" display: none") === -1){
-        Array.from(document.querySelectorAll('.yt-spec-button-shape-next--call-to-action'))?.forEach(e =>
-          {if (e.children[0].children[0].textContent === "Oui"){e.click();}
-        });
+      }else{
+        const popup_s = popup.style.cssText
+        if (popup_s.split(" ").indexOf("display:") === -1 || popup_s.split(";").indexOf(" display: none") === -1){
+          Array.from(document.querySelectorAll('.yt-spec-button-shape-next--call-to-action'))?.forEach(e =>
+            {if (e.children[0].children[0].textContent === "Oui"){e.click();}
+          });
+        }
       }
     }
     
