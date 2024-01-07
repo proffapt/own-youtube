@@ -138,6 +138,7 @@ function handleRedirects() {
 // Dynamic settings (i.e. js instead of css)
 let counter = 0, hyper = false, originalPlayback;
 let onResultsPage = resultsPageRegex.test(location.href);
+const popup = undefined;
 document.addEventListener("DOMContentLoaded", event => {
   handleRedirects();
 
