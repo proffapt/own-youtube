@@ -176,7 +176,7 @@ document.addEventListener("DOMContentLoaded", event => {
       if (typeof popup === "undefined"){
         Array.from(document.querySelectorAll('.ytd-popup-container'))?.forEach(e => {
           if (e.children[0]!== undefined && e.children[0].className === "style-scope ytd-popup-container"){
-            const popup = e;
+            popup = e;
           }
         });
       }else{
