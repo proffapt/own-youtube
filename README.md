@@ -210,7 +210,7 @@ Basic
 </summary>
 
 - **Remove Ads** : Play Ads at 5x and auto-skip
-- **Auto continue** : Remove the popup appearing after a while when listening without interrecting with the site
+- **Auto continue** : Remove the popup appearing after a while when listening without interracting with the site
 - **Center Content** : Remove the left and right panes, and center the video player
 - **Disable AuFeatureslay**
 - **Redirect Shorts** : Play shorts in the normal video player
