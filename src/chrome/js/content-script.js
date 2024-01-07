@@ -173,7 +173,7 @@ document.addEventListener("DOMContentLoaded", event => {
     if (cache['auto_continue'] === true){
       // Click on "yes" button when showing "continue playing"
       // Get the correct one
-      if (popup === undefined){
+      if (typeof popup === undefined){
         Array.from(document.querySelectorAll('.ytd-popup-container'))?.forEach(e => {
           if (e.children[0]!== undefined && e.children[0].className === "style-scope ytd-popup-container"){
             const popup = e;
