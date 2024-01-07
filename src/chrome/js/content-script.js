@@ -138,7 +138,6 @@ function handleRedirects() {
 // Dynamic settings (i.e. js instead of css)
 let counter = 0, hyper = false, originalPlayback;
 let onResultsPage = resultsPageRegex.test(location.href);
-const popup = undefined;
 document.addEventListener("DOMContentLoaded", event => {
   handleRedirects();
 
@@ -177,11 +176,11 @@ document.addEventListener("DOMContentLoaded", event => {
       if (popup === undefined){
         Array.from(document.querySelectorAll('.ytd-popup-container'))?.forEach(e => {
           if (e.children[0]!== undefined && e.children[0].className === "style-scope ytd-popup-container"){
-            popup = e;
+            const popup = e;
           }
         });
       }else{
-        const popup_s = popup.style.cssText
+        var popup_s = popup.style.cssText
         if (popup_s.split(" ").indexOf("display:") === -1 || popup_s.split(";").indexOf(" display: none") === -1){
           Array.from(document.querySelectorAll('.yt-spec-button-shape-next--call-to-action'))?.forEach(e =>
             {if (e.children[0].children[0].textContent === "Oui"){e.click();}
