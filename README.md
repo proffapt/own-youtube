@@ -1,3 +1,7 @@
+> [!Note]
+> I have lost interest in this extension, simply because, I have stopped using YouTube to consume video content. And, there are some good extensions out there with many features and are being actively developed.<br>
+> If someone wish to continue the very extension they can fork this repository and maintain their own version.
+
 <div id="top"></div>
 
 <!-- PROJECT SHIELDS -->
